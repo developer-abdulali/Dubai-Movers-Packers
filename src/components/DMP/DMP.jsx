@@ -33,8 +33,16 @@ const DMP = () => {
           <img
             src="/images/dubai-mover-img.png"
             alt="image"
-            className="w-[1500px]"
+            className="w-[1500px] px-3"
           />
+        </div>
+      </div>
+      <div className="flex flex-col md:flex-row item-center justify-between max-w-screen-xl mx-auto mt-5 pb-5 space-x-5 px-3 md:px-0">
+        <div className="border p-1">
+            <img src="/images/2combineimages.png" alt="Images" />
+        </div>
+        <div>
+            <img src="/images/Reliable Services.png" alt="Images" className="w-[600px] h-[285px] md:h-[162px] lg:h-[280px] " />
         </div>
       </div>
     </>
