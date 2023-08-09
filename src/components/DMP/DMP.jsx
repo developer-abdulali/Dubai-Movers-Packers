@@ -6,7 +6,7 @@ const DMP = () => {
       <div className="flex flex-col items-center justify-between md:flex-row max-w-screen-xl mx-auto mt-5">
         <div>
           <h1 className="font-base text-3xl px-3 md:px-0 text-[#494949]">
-            WELCOME TO DUBAI MOVERS AND PACKER
+            WELCOME TO DUBAI MOVERS AND PACKERS
           </h1>
           <br />
           <div className="font-medium text-[#000000] text-base px-3">
@@ -37,7 +37,7 @@ const DMP = () => {
           />
         </div>
       </div>
-      <div className="flex flex-col md:flex-row item-center justify-between max-w-screen-xl mx-auto mt-5 pb-5 space-x-5 px-3 md:px-0">
+      <div className="flex flex-col md:flex-row item-center justify-between max-w-screen-xl mx-auto mt-5 space-x-5 px-3 md:px-0">
         <div className="border p-1">
             <img src="/images/2combineimages.png" alt="Images" />
         </div>
