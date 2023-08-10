@@ -22,9 +22,11 @@ const TestimonialSlider = () => {
       <div className="mx-auto max-w-2xl lg:max-w-4xl">
         <Slider {...settings}>
           <div>
-            <blockquote className="text-center text-xl font-semibold leading-8 text-white sm:text-2xl sm:leading-9">
+            <blockquote className="text-center text-lg font-medium leading-8 text-white sm:text-2xl sm:leading-9">
               <p>
-                I think this is the best of all Movers and Packers. All boys did unlimited job either of Dubai or Sharjah. All are good and did smart and fantastic job everywhere.”
+                I think this is the best of all Movers and Packers. All boys did
+                unlimited job either of Dubai or Sharjah. All are good and did
+                smart and fantastic job everywhere.”
               </p>
             </blockquote>
             <figcaption className="mt-10">
@@ -47,9 +49,11 @@ const TestimonialSlider = () => {
           {/* Add more testimonial slides */}
 
           <div>
-            <blockquote className="text-center text-xl font-semibold leading-8 text-white sm:text-2xl sm:leading-9">
+            <blockquote className="text-center text-xl font-medium leading-8 text-white sm:text-2xl sm:leading-9">
               <p>
-                “All the service men who came for packing did and excellent job. Very patient, throught and calm. Their calmness made my parents calm in the hour of constant stress.”
+                “All the service men who came for packing did and excellent job.
+                Very patient, throught and calm. Their calmness made my parents
+                calm in the hour of constant stress.”
               </p>
             </blockquote>
             <figcaption className="mt-10">
