@@ -1,33 +1,66 @@
-// Importing the main CSS file to apply global styles to the app
-import "./App.css";
-// Importing custom components
-import Carousel from "./components/Carousel/Carousel";
-import DMP from "./components/DMP/DMP";
-import Services from "./components/Services/Services";
-import Testimonial from "./components/Testimonial/Testimonial";
-import WhyUs from "./components/WhyUs/WhyUs";
+// // Importing the main CSS file to apply global styles to the app
+// import "./App.css";
+// // Importing custom components
+// import Carousel from "./components/Carousel/Carousel";
+// import DMP from "./components/DMP/DMP";
+// import Services from "./components/Services/Services";
+// import Testimonial from "./components/Testimonial/Testimonial";
+// import WhyUs from "./components/WhyUs/WhyUs";
 
-// Defining the main App component
-function App() {
+// // Defining the main App component
+// function App() {
+//   return (
+//     <>
+//       {/* Rendering the Carousel component */}
+//       <Carousel />
+
+//       {/* Rendering the DMP (Dubai Movers & Packers) component */}
+//       <DMP />
+
+//       {/* Rendering the Services component */}
+//       <Services />
+
+//       {/* Rendering the Testimonial component */}
+//       <Testimonial />
+
+//       {/* Rendering the WhyUs component */}
+//       <WhyUs />
+//     </>
+//   );
+// }
+
+// // Exporting the App component as the default export
+// export default App;
+
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import Navbar from "./components/Navbar/Navbar";
+import About from "./about";
+import Services from "./services";
+import HouseShifting from "./houseShifting";
+import GetAQuote from "./getAQuote";
+import Contact from "./contact";
+import Home from "./Home";
+
+const App = () => {
   return (
-    <>
-      {/* Rendering the Carousel component */}
-      <Carousel />
-      
-      {/* Rendering the DMP (Dubai Movers & Packers) component */}
-      <DMP />
-      
-      {/* Rendering the Services component */}
-      <Services />
-      
-      {/* Rendering the Testimonial component */}
-      <Testimonial />
-      
-      {/* Rendering the WhyUs component */}
-      <WhyUs />
-    </>
-  );
-}
+    <Router>
+      <div>
+        {/* Render the Navbar */}
+        {/* <Navbar /> */}
 
-// Exporting the App component as the default export
+        {/* Define routes */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/houseShifting" element={<HouseShifting />} />
+          <Route path="/getAQuote" element={<GetAQuote />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
+    </Router>
+  );
+};
+
 export default App;

@@ -9,3 +9,6 @@
 *{
     font-family: 'Ubuntu', sans-serif;
 }
+.active-link {
+    color: #06b6d4;
+}

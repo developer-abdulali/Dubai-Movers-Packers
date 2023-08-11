@@ -45,7 +45,7 @@ const Footer = () => {
           {/* List of services */}
           <div className="md:w-1/3">
             {/* Section title */}
-            <p className="text-white font-semibold mb-2 mt-3">OUR SERVICES</p>
+            <p className="text-white font-semibold mb-4">OUR SERVICES</p>
             {/* List of services */}
             <ul className="text-white font-medium space-y-1">
               {/* Individual service links */}

@@ -24,9 +24,9 @@ const TestimonialSlider = () => {
           <div>
             <blockquote className="text-center text-lg font-medium leading-8 text-white sm:text-2xl sm:leading-9">
               <p>
-                I think this is the best of all Movers and Packers. All boys did
-                unlimited job either of Dubai or Sharjah. All are good and did
-                smart and fantastic job everywhere.”
+                “I think this is the best of all Movers and Packers. All boys
+                did unlimited job either of Dubai or Sharjah. All are good and
+                did smart and fantastic job everywhere.”
               </p>
             </blockquote>
             <figcaption className="mt-10">
