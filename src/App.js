@@ -33,7 +33,8 @@
 // export default App;
 
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // import Navbar from "./components/Navbar/Navbar";
 import About from "./about";
 import Services from "./services";
@@ -64,3 +65,34 @@ const App = () => {
 };
 
 export default App;
+
+
+
+
+// import React from "react";
+// import { Switch, Route } from "react-router-dom";
+// import Home from "./Home";
+// import About from "./about";
+// import Services from "./services";
+// import HouseShifting from "./houseShifting";
+// import GetAQuote from "./getAQuote";
+// import Contact from "./contact";
+
+// const App = () => {
+//   return (
+//     <div>
+//       {/* Your Navbar component can be placed here */}
+//       <Switch>
+//         <Route exact path="/" component={Home} />
+//         <Route path="/about" component={About} />
+//         <Route path="/services" component={Services} />
+//         <Route path="/houseShifting" component={HouseShifting} />
+//         <Route path="/getAQuote" component={GetAQuote} />
+//         <Route path="/contact" component={Contact} />
+//       </Switch>
+//       {/* Other components and content */}
+//     </div>
+//   );
+// };
+
+// export default App;
