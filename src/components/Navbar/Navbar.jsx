@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -8,12 +9,9 @@ const Navbar = () => {
 
   return (
     <nav className="sticky top-0 bg-white z-10">
-  
-      {/* <div className="hidden bg-[#0772BD] text-3xl h-14 md:flex items-center justify-center">
-        <span className="text-[#ffffff] italic">وَاللَّهُ خَيْرُ الرَّازِقِينَ</span>
-      </div> */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4">
         <div className="flex items-center justify-between h-16">
+          {/* Logo */}
           <div className="flex-shrink-0">
             <a href="#" className="">
               <img
@@ -23,6 +21,7 @@ const Navbar = () => {
               />
             </a>
           </div>
+          {/* Desktop Menu */}
           <div className="hidden md:flex ml-10 space-x-6 text-md font-medium">
             <a href="#" className="duration-200 hover:text-blue-500">
               HOME
@@ -43,6 +42,7 @@ const Navbar = () => {
               CONTACT
             </a>
           </div>
+          {/* Mobile Menu Toggle */}
           <div className="-mr-2 md:hidden">
             <button
               onClick={toggleMenu}
@@ -84,6 +84,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+      {/* Mobile Menu */}
       <div
         className={`${
           isOpen ? "block" : "hidden"
