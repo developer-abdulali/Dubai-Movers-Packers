@@ -112,7 +112,7 @@ const About = () => {
           operational staff as they arrange for the removal.
         </p>
       </div>
-      <div className="flex flex-col md:flex-row justify-between space-y-5 md:space-y-0 mt-5 mb-3">
+      <div className="flex flex-col md:flex-row justify-between space-y-5 space-x-3 md:space-y-0 mt-5 mb-3">
         <div className="p-1 border">
           <img src="/images/MoversPackers.jpeg" alt="Shifting" />
         </div>
