@@ -25,9 +25,9 @@ const Footer = () => {
   };
 
   return (
-    <div className="bg-black">
+    <div className="bg-black py-5">
       {/* Footer section */}
-      <footer className="max-w-screen-xl mx-auto p-8">
+      <footer className="max-w-screen-xl mx-auto">
         {/* Flex container for layout */}
         <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0 md:space-x-4">
           {/* Logo and description */}
@@ -50,32 +50,32 @@ const Footer = () => {
             <ul className="text-white font-medium space-y-1">
               {/* Individual service links */}
               <li>
-                <a href="#" className="hover:text-blue-500">
+                <a href="/" className="hover:text-blue-500">
                   Movers and Packers
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-500">
+                <a href="/" className="hover:text-blue-500">
                   House Shifting
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-500">
+                <a href="/" className="hover:text-blue-500">
                   Office Relocation
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-500">
+                <a href="/" className="hover:text-blue-500">
                   Domestic Shifting
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-500">
+                <a href="/" className="hover:text-blue-500">
                   Goods Tranportation
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-500">
+                <a href="/" className="hover:text-blue-500">
                   Car Carier
                 </a>
               </li>

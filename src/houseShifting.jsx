@@ -13,15 +13,15 @@ const HouseShifting = () => {
   };
 
   return (
-    <div className=" max-w-screen-xl mx-auto">
+    <div className="max-w-screen-xl mx-auto">
       <div className="bg-[#0772BD] py-3 mt-3">
         <p className="text-white font-medium text-2xl ml-5">Our Services</p>
       </div>
-      <div className="flex flex-col md:flex-row p-4 rounded-lg">
+      <div className="flex flex-col md:flex-row  rounded-lg">
         <div className="w-full md:w-2/3 md:pr-4 mt-4">
           <div className="p-1 border">
             <img
-              src="/images/2ndCombineImg.png"
+              src="/images/2combineimgs.png"
               alt="combine"
               className="w-full h-auto"
             />

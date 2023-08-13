@@ -7,11 +7,11 @@ const DMP = () => {
       <div className="flex flex-col items-center justify-between md:flex-row max-w-screen-xl mx-auto mt-5">
         <div>
           {/* Heading */}
-          <h1 className="font-base text-3xl px-3 md:px-0 text-[#494949]">
+          <h1 className="font-base text-3xl md:px-0 text-[#494949]">
             WELCOME TO DUBAI MOVERS AND PACKERS
           </h1>
           <br />
-          <div className="font-medium text-[#000000] text-base px-3">
+          <div className="font-medium text-[#000000] text-base">
             {/* Introduction */}
             <span>
               Dubai packers and Movers provides you reliable and efficient
@@ -37,14 +37,14 @@ const DMP = () => {
         <div>
           <img
             src="/images/dubai-mover-img.png"
-            alt="image"
-            className="w-[1500px] px-3"
+            alt="Dubai Movers and packers"
+            className="w-[1500px]"
           />
         </div>
       </div>
 
       {/* Additional Information */}
-      <div className="flex flex-col md:flex-row items-center justify-between max-w-screen-xl mx-auto mt-5 space-x-5 px-3 md:px-0">
+      <div className="flex flex-col md:flex-row items-center justify-between max-w-screen-xl mx-auto mt-5 space-x-5 md:px-0">
         {/* Border with images */}
         <div className="border p-1">
           <img src="/images/2combineimages.png" alt="Images" />

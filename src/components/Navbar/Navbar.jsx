@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
-const Navbar = ({ activeRoute }) => {
+const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
@@ -10,7 +10,7 @@ const Navbar = ({ activeRoute }) => {
 
   return (
     <nav className="sticky top-0 bg-white z-10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4">
+      <div className="max-w-screen-xl mx-auto px-0 sm:px-6 lg:px-6 mt-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0 py-3">
             <a href="/">
@@ -27,7 +27,6 @@ const Navbar = ({ activeRoute }) => {
               className={`duration-200 hover:text-blue-500 ${
                 location.pathname === "/" ? "text-blue-500" : ""
               }`}
-              // onClick={() => handleLinkClick("/")}
             >
               HOME
             </a>
@@ -36,7 +35,6 @@ const Navbar = ({ activeRoute }) => {
               className={`duration-200 hover:text-blue-500 ${
                 location.pathname === "/about" ? "text-blue-500" : ""
               }`}
-              // onClick={() => handleLinkClick("/about")}
             >
               ABOUT
             </a>
@@ -45,7 +43,6 @@ const Navbar = ({ activeRoute }) => {
               className={`duration-200 hover:text-blue-500 ${
                 location.pathname === "/services" ? "text-blue-500" : ""
               }`}
-              // onClick={() => handleLinkClick("/services")}
             >
               SERVICES
             </a>
@@ -54,7 +51,6 @@ const Navbar = ({ activeRoute }) => {
               className={`duration-200 hover:text-blue-500 ${
                 location.pathname === "/houseShifting" ? "text-blue-500" : ""
               }`}
-              // onClick={() => handleLinkClick("/houseShifting")}
             >
               HOUSE SHIFTING 24/7
             </a>
@@ -63,7 +59,6 @@ const Navbar = ({ activeRoute }) => {
               className={`duration-200 hover:text-blue-500 ${
                 location.pathname === "/getAQuote" ? "text-blue-500" : ""
               }`}
-              // onClick={() => handleLinkClick("/getAQuote")}
             >
               GET A QUOTE
             </a>
@@ -72,7 +67,6 @@ const Navbar = ({ activeRoute }) => {
               className={`duration-200 hover:text-blue-500 ${
                 location.pathname === "/contact" ? "text-blue-500" : ""
               }`}
-              // onClick={() => handleLinkClick("/contact")}
             >
               CONTACT
             </a>
