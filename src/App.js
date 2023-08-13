@@ -27,15 +27,9 @@
 //       <WhyUs />
 //     </>
 //   );
-// }
-
-// // Exporting the App component as the default export
-// export default App;
-
-import React from "react";
-// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// }import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-// import Navbar from "./components/Navbar/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import About from "./about";
 import Services from "./services";
 import HouseShifting from "./houseShifting";
@@ -48,7 +42,7 @@ const App = () => {
     <Router>
       <div>
         {/* Render the Navbar */}
-        {/* <Navbar /> */}
+        <Navbar />
 
         {/* Define routes */}
         <Routes>

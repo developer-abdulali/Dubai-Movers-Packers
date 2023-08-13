@@ -2,13 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-#carouselExampleControls{
-    margin-top: 15px;
+#carouselExampleControls {
+  margin-top: 15px;
 }
 
-*{
-    font-family: 'Ubuntu', sans-serif;
+* {
+  font-family: "Ubuntu", sans-serif;
 }
-/* .active-link {
-    color: #06b6d4;
-} */
