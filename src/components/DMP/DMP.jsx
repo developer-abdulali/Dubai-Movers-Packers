@@ -4,7 +4,7 @@ const DMP = () => {
   return (
     <>
       {/* Welcome section */}
-      <div className="flex flex-col items-center justify-between md:flex-row max-w-screen-xl mx-auto mt-5">
+      <div className="flex flex-col items-center justify-between md:flex-row max-w-screen-xl mx-auto px-3 mt-5">
         <div>
           {/* Heading */}
           <h1 className="font-base text-3xl md:px-0 text-[#494949]">

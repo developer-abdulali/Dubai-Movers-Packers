@@ -14,12 +14,12 @@ const GetAQoute = () => {
   return (
     <>
       <div className="bg-[#0772BD] py-3 max-w-screen-xl mx-auto mt-2">
-        <p className="text-white font-medium text-2xl ml-5">About Us</p>
+        <p className="text-white font-medium text-2xl ml-5">Get A Quote</p>
       </div>
-      <div className="flex flex-col md:flex-row my-3 mt-[-30px] max-w-screen-xl mx-auto">
+      <div className="flex flex-col md:flex-row my-3 mt-[-30px] max-w-screen-xl mx-auto px-3">
         {/* Left Side (Why Us) */}
         <div className="w-full md:w-2/3">
-          <h2 className="text-2xl md:text-4xl font-medium mb-4 text-[#0C71B8]">
+          <h2 className="text-xl md:text-4xl font-medium mb-4 text-[#0C71B8]">
             WHY DUBAI MOVERS
           </h2>
           <p className="mb-4 text-base md:text-md text-black">
@@ -57,7 +57,7 @@ const GetAQoute = () => {
                 <input
                   type="text"
                   id="name"
-                  className="w-full px-3 py-2 h-9 border-2 mt-3 rounded-lg focus:outline-none bg-[#0C71B8] focus:border-white text-white"
+                  className="w-full px-3 py-2 h-9 border-2 mt-3 placeholder:text-white/80 rounded-lg focus:outline-none bg-[#0C71B8] focus:border-white text-white"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   required
@@ -68,7 +68,7 @@ const GetAQoute = () => {
                 <input
                   type="phone"
                   id="phone"
-                  className="w-full px-3 py-2 h-9 border-2 rounded-lg focus:outline-none focus:border-white bg-[#0C71B8] text-white"
+                  className="w-full px-3 py-2 h-9 border-2 placeholder:text-white/80 rounded-lg focus:outline-none focus:border-white bg-[#0C71B8] text-white"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
                   placeholder="Phone"
@@ -78,7 +78,7 @@ const GetAQoute = () => {
                 <input
                   type="email"
                   id="email"
-                  className="w-full px-3 py-2 h-9 border-2 rounded-lg focus:outline-none focus:border-white bg-[#0C71B8] text-white"
+                  className="w-full px-3 py-2 h-9 border-2 rounded-lg placeholder:text-white/80 focus:outline-none focus:border-white bg-[#0C71B8] text-white"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
@@ -88,7 +88,7 @@ const GetAQoute = () => {
               <div className="mb-4">
                 <textarea
                   id="message"
-                  className="w-full px-3 py-2 border-2 rounded-lg focus:outline-none focus:border-white bg-[#0C71B8] text-white"
+                  className="w-full px-3 py-2 border-2 rounded-lg placeholder:text-white/80 focus:outline-none focus:border-white bg-[#0C71B8] text-white"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   rows="4"

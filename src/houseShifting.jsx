@@ -13,9 +13,9 @@ const HouseShifting = () => {
   };
 
   return (
-    <div className="max-w-screen-xl mx-auto">
+    <div className="max-w-screen-xl mx-auto px-3">
       <div className="bg-[#0772BD] py-3 mt-3">
-        <p className="text-white font-medium text-2xl ml-5">Our Services</p>
+        <p className="text-white font-medium text-2xl ml-5">House Shifting</p>
       </div>
       <div className="flex flex-col md:flex-row  rounded-lg">
         <div className="w-full md:w-2/3 md:pr-4 mt-4">
@@ -66,7 +66,7 @@ const HouseShifting = () => {
                 <input
                   type="text"
                   id="name"
-                  className="w-full px-3 py-2 h-9 border-2 border-black mt-3 focus:outline-none bg-[#E1E1E1] text-black"
+                  className="w-full px-3 py-2 h-9 border-2 placeholder:text-gray-500 border-black mt-3 focus:outline-none bg-[#E1E1E1] text-black"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   required
@@ -77,7 +77,7 @@ const HouseShifting = () => {
                 <input
                   type="tel"
                   id="phone"
-                  className="w-full px-3 py-2 h-9 border-2 border-black focus:outline-none bg-[#E1E1E1] text-black"
+                  className="w-full px-3 py-2 h-9 border-2 placeholder:text-gray-500 border-black focus:outline-none bg-[#E1E1E1] text-black"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
                   placeholder="Phone"
@@ -87,7 +87,7 @@ const HouseShifting = () => {
                 <input
                   type="email"
                   id="email"
-                  className="w-full px-3 py-2 h-9 border-2 border-black focus:outline-none bg-[#E1E1E1] text-black"
+                  className="w-full px-3 py-2 h-9 border-2 placeholder:text-gray-500 border-black focus:outline-none bg-[#E1E1E1] text-black"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
@@ -98,7 +98,7 @@ const HouseShifting = () => {
                 <input
                   type="text"
                   id="service"
-                  className="w-full px-3 py-2 h-9 border-2 border-black focus:outline-none bg-[#E1E1E1] text-black"
+                  className="w-full px-3 py-2 h-9 border-2 placeholder:text-gray-500 border-black focus:outline-none bg-[#E1E1E1] text-black"
                   value={service}
                   onChange={(e) => setService(e.target.value)}
                   placeholder="Enter service like Office Shifting etc"
@@ -107,7 +107,7 @@ const HouseShifting = () => {
               <div className="mb-4">
                 <textarea
                   id="message"
-                  className="w-full px-3 py-2 border-2 border-black focus:outline-none bg-[#E1E1E1] text-black"
+                  className="w-full px-3 py-2 border-2 border-black placeholder:text-gray-500 focus:outline-none bg-[#E1E1E1] text-black"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   rows="6"

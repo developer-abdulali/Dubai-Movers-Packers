@@ -25,7 +25,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="bg-black py-5">
+    <div className="bg-black p-4">
       {/* Footer section */}
       <footer className="max-w-screen-xl mx-auto">
         {/* Flex container for layout */}

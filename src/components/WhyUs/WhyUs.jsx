@@ -12,7 +12,7 @@ const WhyUs = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row my-3 mt-[-30px] max-w-screen-xl mx-auto">
+    <div className="flex flex-col md:flex-row my-3 mt-[-30px] max-w-screen-xl mx-auto px-3">
       {/* Left Side (Why Us) */}
       <div className="w-full md:w-2/3">
         <h2 className="text-2xl md:text-4xl font-medium mb-4 text-[#0C71B8]">

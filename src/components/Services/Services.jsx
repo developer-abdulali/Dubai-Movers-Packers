@@ -14,7 +14,7 @@ const Services = () => {
             className="mx-auto mb-2 w-full h-[200px] max-w-full"
           />
           <span className="text-xl md:text-2xl">House Shifting</span> <br />
-          <a href="#">
+          <a href="/">
             <button className="mt-2 btn btn-primary">Book Now</button>
           </a>
         </div>
@@ -25,7 +25,7 @@ const Services = () => {
             className="mx-auto mb-2 w-full h-[200px] max-w-full"
           />
           <span className="text-xl md:text-2xl">Domestic Shifting</span> <br />
-          <a href="#">
+          <a href="/">
             <button className="mt-2 btn btn-primary">Book Now</button>
           </a>
         </div>
@@ -36,7 +36,7 @@ const Services = () => {
             className="mx-auto mb-2 w-full h-[200px] max-w-full"
           />
           <span className="text-xl md:text-2xl">Office Shifting</span> <br />
-          <a href="#">
+          <a href="/">
             <button className="mt-2 btn btn-primary">Book Now</button>
           </a>
         </div>
@@ -47,7 +47,7 @@ const Services = () => {
             className="mx-auto mb-2 w-full h-[200px] max-w-full"
           />
           <span className="text-xl md:text-2xl">Movers and Packers</span> <br />
-          <a href="#">
+          <a href="/">
             <button className="mt-2 btn btn-primary">Book Now</button>
           </a>
         </div>
@@ -59,7 +59,7 @@ const Services = () => {
           />
           <span className="text-xl md:text-2xl">Good Transportation</span>{" "}
           <br />
-          <a href="#">
+          <a href="/">
             <button className="mt-2 btn btn-primary">Book Now</button>
           </a>
         </div>
@@ -70,7 +70,7 @@ const Services = () => {
             className="mx-auto mb-2 w-full h-[200px] max-w-full"
           />
           <span className="text-xl md:text-2xl">Car Carrier</span> <br />
-          <a href="#">
+          <a href="/">
             <button className="mt-2 btn btn-primary">Book Now</button>
           </a>
         </div>

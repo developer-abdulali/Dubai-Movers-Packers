@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 bg-white z-10">
+    <nav className="sticky top-0 bg-white z-10 px-3">
       <div className="max-w-screen-xl mx-auto px-0 sm:px-6 lg:px-6 mt-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0 py-3">
@@ -115,21 +115,29 @@ const Navbar = () => {
       <div
         className={`${
           isOpen ? "block" : "hidden"
-        } md:hidden px-2 pt-2 pb-3 mt-5 bg-black text-white text-center`}
+        } md:hidden px-2 pt-2 pb-3 text-black`}
       >
         <div className="flex flex-col space-y-5 text-lg font-medium">
           <a
             href="/"
             className={`duration-200 hover:text-cyan-300 ${
-              location.pathname === "/" ? "text-cyan-300" : ""
+              location.pathname === "/" ? "text-blue-500" : ""
             }`}
           >
             Home
           </a>
           <a
+            href="/about"
+            className={`duration-200 hover:text-cyan-300 ${
+              location.pathname === "/about" ? "text-blue-500" : ""
+            }`}
+          >
+            About
+          </a>
+          <a
             href="/services"
             className={`duration-200 hover:text-cyan-300 ${
-              location.pathname === "/services" ? "text-cyan-300" : ""
+              location.pathname === "/services" ? "text-blue-500" : ""
             }`}
           >
             Services
@@ -137,7 +145,7 @@ const Navbar = () => {
           <a
             href="/houseShifting"
             className={`duration-200 hover:text-cyan-300 ${
-              location.pathname === "/houseShifting" ? "text-cyan-300" : ""
+              location.pathname === "/houseShifting" ? "text-blue-500" : ""
             }`}
           >
             House Shifting 24/7
@@ -145,7 +153,7 @@ const Navbar = () => {
           <a
             href="/getAQuote"
             className={`duration-200 hover:text-cyan-300 ${
-              location.pathname === "/getAQuote" ? "text-cyan-300" : ""
+              location.pathname === "/getAQuote" ? "text-blue-500" : ""
             }`}
           >
             Get A Quote
@@ -153,7 +161,7 @@ const Navbar = () => {
           <a
             href="/contact"
             className={`duration-200 hover:text-cyan-300 ${
-              location.pathname === "/contact" ? "text-cyan-300" : ""
+              location.pathname === "/contact" ? "text-blue-500" : ""
             }`}
           >
             Contact

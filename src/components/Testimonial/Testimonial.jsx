@@ -14,7 +14,7 @@ const TestimonialSlider = () => {
 
   return (
     <section className="relative overflow-hidden bg-black px-6 py-10 sm:py-28 lg:px-8 mb-5 h-[450px]">
-      <span className="flex items-center justify-center text-4xl text-white mb-5">
+      <span className="flex items-center justify-center text-3xl md:text-4xl text-white mb-5">
         TESTIMONIALS
       </span>
       <div className="absolute inset-0 z-[-10] opacity-20 bg-radial-gradient"></div>
