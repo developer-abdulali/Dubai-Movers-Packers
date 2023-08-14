@@ -6,7 +6,7 @@ const Services = () => {
       <div className="text-center text-3xl md:text-4xl mt-4">
         <span>Our Services</span>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 max-w-screen-xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 max-w-screen-xl mx-auto px-3">
         <div className="text-center">
           <img
             src="/images/House-Shifting.jpeg"

@@ -44,7 +44,7 @@ const DMP = () => {
       </div>
 
       {/* Additional Information */}
-      <div className="flex flex-col md:flex-row items-center justify-between max-w-screen-xl mx-auto mt-5 space-x-5 md:px-0">
+      <div className="flex flex-col md:flex-row items-center justify-between max-w-screen-xl mx-auto px-3 mt-5 space-x-5 md:px-0">
         {/* Border with images */}
         <div className="border p-1">
           <img src="/images/2combineimages.png" alt="Images" />
