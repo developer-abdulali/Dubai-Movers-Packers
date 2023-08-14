@@ -142,9 +142,9 @@ const Contact = () => {
   };
 
   return (
-    <div className="bg-white px-4 py-6 sm:py-12 md:py-24 lg:px-8">
+    // <div className="bg-white px-4 py-6 sm:py-12 md:py-24 lg:px-8">
 
-    {/* // <div className="bg-white px-4 pb-3"> */}
+   <div className="bg-white px-4 pb-5">
       <form
         onSubmit={handleSubmit}
         className="mx-auto mt-8 max-w-xl sm:mt-12 md:mt-16 lg:mt-20"

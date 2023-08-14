@@ -9,8 +9,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 bg-white z-10 px-3">
-      <div className="max-w-screen-xl mx-auto px-0 sm:px-6 lg:px-6 mt-4">
+    <nav className="sticky top-0 bg-white z-10 px-3 md:p-0">
+      <div className="max-w-screen-xl mx-auto mt-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0 py-3">
             <a href="/">
