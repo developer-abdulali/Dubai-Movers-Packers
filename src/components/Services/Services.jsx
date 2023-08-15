@@ -9,7 +9,7 @@ const Services = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 max-w-screen-xl mx-auto px-3">
         <div className="text-center">
           <img
-            src="/images/House-shifting.jpeg"
+            src="/images/House-Shifting.jpeg"
             alt="House Shifting"
             className="mx-auto mb-2 w-full h-[200px] max-w-full"
           />
