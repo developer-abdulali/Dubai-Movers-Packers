@@ -14,7 +14,7 @@ const Carousel = () => {
           <img
             src="/images/sliderimg1.jpeg"
             className="d-block w-100 h-[300px] md:h-[600px]"
-            alt="Slider image 1"
+            alt="Slider Pic 1"
           />
         </div>
         {/* Second carousel item */}
@@ -22,7 +22,7 @@ const Carousel = () => {
           <img
             src="/images/sliderimg2.jpg"
             className="d-block w-100 h-[300px] md:h-[600px]"
-            alt="Slider image 2"
+            alt="Slider Pic 2"
           />
         </div>
         {/* Third carousel item */}
@@ -30,7 +30,7 @@ const Carousel = () => {
           <img
             src="/images/sliderimg3.jpg"
             className="d-block w-100 h-[300px] md:h-[600px]"
-            alt="Slider image 3"
+            alt="Slider Pic 3"
           />
         </div>
       </div>

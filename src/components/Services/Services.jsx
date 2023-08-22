@@ -51,29 +51,7 @@ const Services = () => {
             <button className="mt-2 btn btn-primary">Book Now</button>
           </a>
         </div>
-        <div className="text-center">
-          <img
-            src="/images/goodTransportation.png"
-            alt="Good Transportation"
-            className="mx-auto mb-2 w-full h-[200px] max-w-full"
-          />
-          <span className="text-xl md:text-2xl">Good Transportation</span>{" "}
-          <br />
-          <a href="/">
-            <button className="mt-2 btn btn-primary">Book Now</button>
-          </a>
-        </div>
-        <div className="text-center">
-          <img
-            src="/images/car-carier.png"
-            alt="Car Carrier"
-            className="mx-auto mb-2 w-full h-[200px] max-w-full"
-          />
-          <span className="text-xl md:text-2xl">Car Carrier</span> <br />
-          <a href="/">
-            <button className="mt-2 btn btn-primary">Book Now</button>
-          </a>
-        </div>
+       
       </div>
     </div>
   );

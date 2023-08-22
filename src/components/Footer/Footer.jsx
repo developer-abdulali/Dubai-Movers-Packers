@@ -43,7 +43,7 @@ const Footer = () => {
             </p>
           </div>
           {/* List of services */}
-          <div className="md:w-1/3">
+          <div className="w-full md:w-1/3">
             {/* Section title */}
             <p className="text-white font-semibold mb-4">OUR SERVICES</p>
             {/* List of services */}
@@ -128,7 +128,7 @@ const Footer = () => {
             </form>
           </div>
           {/* Contact information */}
-          <div className="md:w-1/3">
+          <div className="w-full md:w-1/3">
             {/* Section title */}
             <p className="font-semibold text-white mb-4 mt-4">GET IN TOUCH</p>
             {/* Contact details */}
