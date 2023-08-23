@@ -9,8 +9,8 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-white z-10 sticky top-0">
-      <nav className="max-w-screen-xl mx-auto px-3 h-[70px]">
+    <div className="bg-white z-10 sticky top-0 shadow-sm">
+      <nav className="max-w-screen-xl mx-auto px-3 h-[72px]">
         <div className="max-w-screen-xl mx-auto mt-4">
           <div className="flex items-center justify-between h-16">
             <div className="flex-shrink-0 py-3">
@@ -18,7 +18,7 @@ const Navbar = () => {
                 <img
                   src="/images/logo-removebg.png"
                   alt="logo"
-                  className="w-[120px] sm:w-[200px]"
+                  className="w-[120px] sm:w-[200px] mt-2"
                 />
               </a>
             </div>
@@ -120,7 +120,7 @@ const Navbar = () => {
         >
           <div className="flex flex-col space-y-5 text-lg font-medium">
             <a
-              href="/"
+              href="/" 
               className={`duration-200 hover:text-cyan-300 ${
                 location.pathname === "/" ? "text-blue-500" : ""
               }`}
