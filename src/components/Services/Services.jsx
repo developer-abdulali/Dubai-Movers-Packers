@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   return (
@@ -7,16 +8,17 @@ const Services = () => {
         <span>Our Services</span>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 max-w-screen-xl mx-auto px-3">
-        <div className="text-center">
+        <div className="text-center border border-gray-200 p-2 hover:scale-105 duration-200 hover:shadow-md hover:rounded-md">
           <img
             src="/images/HouseShifting.jpeg"
             alt="House Shifting"
             className="mx-auto mb-2 w-full h-[200px] max-w-full"
+            
           />
           <span className="text-xl md:text-2xl">House Shifting</span> <br />
-          <a href="/">
+          <Link to="/houseShifting">
             <button className="mt-2 btn btn-primary">Book Now</button>
-          </a>
+          </Link>
         </div>
         <div className="text-center">
           <img
@@ -25,9 +27,9 @@ const Services = () => {
             className="mx-auto mb-2 w-full h-[200px] max-w-full"
           />
           <span className="text-xl md:text-2xl">Domestic Shifting</span> <br />
-          <a href="/">
+          <Link to="/domesticShifting">
             <button className="mt-2 btn btn-primary">Book Now</button>
-          </a>
+          </Link>
         </div>
         <div className="text-center">
           <img
@@ -36,9 +38,9 @@ const Services = () => {
             className="mx-auto mb-2 w-full h-[200px] max-w-full"
           />
           <span className="text-xl md:text-2xl">Office Shifting</span> <br />
-          <a href="/">
+          <Link to="/officeShifting">
             <button className="mt-2 btn btn-primary">Book Now</button>
-          </a>
+          </Link>
         </div>
         <div className="text-center">
           <img
@@ -47,9 +49,9 @@ const Services = () => {
             className="mx-auto mb-2 w-full h-[200px] max-w-full"
           />
           <span className="text-xl md:text-2xl">Movers and Packers</span> <br />
-          <a href="/">
+          <Link to="/moversPackers">
             <button className="mt-2 btn btn-primary">Book Now</button>
-          </a>
+          </Link>
         </div>
        
       </div>
@@ -58,3 +60,4 @@ const Services = () => {
 };
 
 export default Services;
+

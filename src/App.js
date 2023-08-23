@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import About from "./about";
 import Services from "./services";
 import HouseShifting from "./houseShifting";
+import DomesticShifting from "./domesticShifting";
 import GetAQuote from "./getAQuote";
 import Contact from "./contact";
 import Home from "./Home";
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/houseShifting" element={<HouseShifting />} />
+          <Route path="/domesticShifting" element={<DomesticShifting/>} />
           <Route path="/getAQuote" element={<GetAQuote />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

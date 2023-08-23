@@ -12,11 +12,11 @@ const GetAQoute = () => {
   };
 
   return (
-    <>
-      <div className="bg-[#0772BD] py-3 max-w-screen-xl mx-auto mt-2">
+    <div className="max-w-screen-xl mx-auto px-3">
+      <div className="bg-[#0772BD] py-3 mt-2">
         <p className="text-white font-medium text-2xl ml-5">Get A Quote</p>
       </div>
-      <div className="flex flex-col md:flex-row my-3 mt-[-30px] max-w-screen-xl mx-auto px-3">
+      <div className="flex flex-col md:flex-row my-3 mt-[-30px]">
         {/* Left Side (Why Us) */}
         <div className="w-full md:w-2/3">
           <h2 className="text-xl md:text-4xl font-medium mb-4 text-[#0C71B8]">
@@ -106,7 +106,7 @@ const GetAQoute = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

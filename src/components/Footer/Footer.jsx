@@ -25,7 +25,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="bg-black p-4">
+    <div className="bg-black p-4 z-200">
       {/* Footer section */}
       <footer className="max-w-screen-xl mx-auto">
         {/* Flex container for layout */}
@@ -47,38 +47,29 @@ const Footer = () => {
             {/* Section title */}
             <p className="text-white font-semibold mb-4">OUR SERVICES</p>
             {/* List of services */}
-            <ul className="text-white font-medium space-y-1">
+            <ul className="text-white font-medium space-y-5">
               {/* Individual service links */}
               <li>
-                <a href="/" className="hover:text-blue-500">
+                <a href="/moversPackers" className="hover:text-blue-500">
                   Movers and Packers
                 </a>
               </li>
               <li>
-                <a href="/" className="hover:text-blue-500">
+                <a href="/houseShifting" className="hover:text-blue-500">
                   House Shifting
                 </a>
               </li>
               <li>
-                <a href="/" className="hover:text-blue-500">
+                <a href="/officeRelocation" className="hover:text-blue-500">
                   Office Relocation
                 </a>
               </li>
               <li>
-                <a href="/" className="hover:text-blue-500">
+                <a href="/domesticShifting" className="hover:text-blue-500">
                   Domestic Shifting
                 </a>
               </li>
-              <li>
-                <a href="/" className="hover:text-blue-500">
-                  Goods Tranportation
-                </a>
-              </li>
-              <li>
-                <a href="/" className="hover:text-blue-500">
-                  Car Carier
-                </a>
-              </li>
+             
               {/* Add more services here */}
             </ul>
           </div>
