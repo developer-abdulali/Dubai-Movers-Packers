@@ -20,7 +20,7 @@ const Services = () => {
             <button className="mt-2 btn btn-primary">Book Now</button>
           </Link>
         </div>
-        <div className="text-center">
+        <div className="text-center border border-gray-200 p-2 hover:scale-105 duration-200 hover:shadow-md hover:rounded-md">
           <img
             src="/images/domesticShifting.png"
             alt="Domestic Shifting"
@@ -31,7 +31,7 @@ const Services = () => {
             <button className="mt-2 btn btn-primary">Book Now</button>
           </Link>
         </div>
-        <div className="text-center">
+        <div className="text-center border border-gray-200 p-2 hover:scale-105 duration-200 hover:shadow-md hover:rounded-md">
           <img
             src="/images/officeShifting.png"
             alt="Office Shifting"
@@ -42,7 +42,7 @@ const Services = () => {
             <button className="mt-2 btn btn-primary">Book Now</button>
           </Link>
         </div>
-        <div className="text-center">
+        <div className="text-center border border-gray-200 p-2 hover:scale-105 duration-200 hover:shadow-md hover:rounded-md">
           <img
             src="/images/MoversPackers.jpeg"
             alt="Movers packers"

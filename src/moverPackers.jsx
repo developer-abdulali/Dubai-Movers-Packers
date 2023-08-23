@@ -98,7 +98,7 @@ const MoversPackers = () => {
               <div className="mb-4">
                 <select
                   id="service"
-                  className="w-full px-2 py-2 h-10 border-2 placeholder:text-gray-700 border-black focus:outline-none bg-[#E1E1E1] text-black"
+                  className="w-full px-2 py-2 h-10 border-2 placeholder:text-gray-700 border-black focus:outline-none bg-[#E1E1E1]"
                   value={service}
                   onChange={(e) => setService(e.target.value)}
                   required
