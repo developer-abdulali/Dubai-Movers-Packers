@@ -71,7 +71,7 @@ const MoversPackers = () => {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   required
-                  placeholder="Your Name *"
+                  placeholder="Your Name"
                 />
               </div>
               <div className="mb-4">
@@ -92,7 +92,7 @@ const MoversPackers = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
-                  placeholder="Email Address *"
+                  placeholder="Email Address"
                 />
               </div>
               <div className="mb-4">

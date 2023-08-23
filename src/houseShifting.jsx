@@ -67,18 +67,18 @@ const HouseShifting = () => {
                 <input
                   type="text"
                   id="name"
-                  className="w-full px-2 py-2 h-10 border-2 placeholder:text-gray-700 border-black mt-3 focus:outline-none bg-[#E1E1E1] text-black"
+                  className="w-full px-2 py-2 h-10 border-2 placeholder:text-gray-500 border-black mt-3 focus:outline-none bg-[#E1E1E1] text-black"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   required
-                  placeholder="Your Name *"
+                  placeholder="Your Name"
                 />
               </div>
               <div className="mb-4">
                 <input
                   type="tel"
                   id="phone"
-                  className="w-full px-2 py-2 h-10 border-2 placeholder:text-gray-700 border-black focus:outline-none bg-[#E1E1E1] text-black"
+                  className="w-full px-2 py-2 h-10 border-2 placeholder:text-gray-500 border-black focus:outline-none bg-[#E1E1E1] text-black"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
                   placeholder="Phone"
@@ -88,17 +88,17 @@ const HouseShifting = () => {
                 <input
                   type="email"
                   id="email"
-                  className="w-full px-2 py-2 h-10 border-2 placeholder:text-gray-700 border-black focus:outline-none bg-[#E1E1E1] text-black"
+                  className="w-full px-2 py-2 h-10 border-2 placeholder:text-gray-500 border-black focus:outline-none bg-[#E1E1E1] text-black"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
-                  placeholder="Email Address *"
+                  placeholder="Email Address"
                 />
               </div>
               <div className="mb-4">
                 <select
                   id="service"
-                  className="w-full px-2 py-2 h-10 border-2 placeholder:text-gray-700 border-black focus:outline-none bg-[#E1E1E1] text-black"
+                  className="w-full px-2 py-2 h-10 border-2 placeholder:text-gray-500 border-black focus:outline-none bg-[#E1E1E1] text-black"
                   value={service}
                   onChange={(e) => setService(e.target.value)}
                   required
@@ -115,7 +115,7 @@ const HouseShifting = () => {
               <div className="mb-4">
                 <textarea
                   id="message"
-                  className="w-full px-2 py-2 border-2 border-black placeholder:text-gray-700 focus:outline-none bg-[#E1E1E1] text-black"
+                  className="w-full px-2 py-2 border-2 border-black placeholder:text-gray-500 focus:outline-none bg-[#E1E1E1] text-black"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   rows="6"
@@ -125,7 +125,7 @@ const HouseShifting = () => {
               </div>
               <button
                 type="submit"
-                className="bg-[#585ccd] text-white px-4 py-3 text-sm w-full"
+                className="bg-blue-500 text-white px-4 py-3 text-sm w-full hover:bg-blue-600 duration-200"
               >
                 SUBMIT
               </button>

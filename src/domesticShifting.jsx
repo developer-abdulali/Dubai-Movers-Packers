@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { BsCheckLg, BsDot } from "react-icons/bs";
 
 const DomesticShifting = () => {
   const [name, setName] = useState("");
@@ -42,62 +41,47 @@ const DomesticShifting = () => {
             <br />
             <br />
             Our Services for home shifting at glance Pre-departure survey.
+            <br /> <br />
+            <p className="flex items-center gap-1">1. pre-departure survey.</p>
+            <p className="flex items-center gap-1">
+              2. Door to Door (full moving) service & personalized services.
+            </p>
+            <p className="flex items-center gap-1">
+              3. Proper packing solution using good quality packing materials.
+            </p>
+            <p className="flex items-center gap-1">
+              4. Packing done by expert packers.
+            </p>
+            <p className="flex items-center gap-1">
+              5. Personalized loading & unloading services.
+            </p>
+            <p className="flex items-center gap-1">
+              6. Comprehensive insurance coverage policy with full moving
+              services.
+            </p>
+            <p className="flex items-center gap-1">
+              7. Safe transfer of goods at the respective destinations.
+            </p>
+            <p className="flex items-center gap-1">
+              8. Entire operation done under excellent supervision.
+            </p>
+            <p className="flex items-center gap-1">
+              9. Excellent customer support.
+            </p>
+            <p className="flex items-center gap-1">
+              10. Value for money services – competitive & reasonable price
+              quote.
+            </p>
+            <p className="flex items-center gap-1">
+              11. Happy home shifting guaranteed.
+            </p>
+            <p className="flex items-center gap-1">
+              12. Less stress level and more happy experiences.
+            </p>
+            <p className="flex items-center gap-1">
+              13. Safe warehousing & storage facility.
+            </p>
           </p>
-          <div className="text-base font-medium md:text-md text-[#000000]">
-            <ul>
-              <li className="flex items-center gap-1">
-                <BsDot size={20} /> pre-departure survey.
-              </li>
-              <li className="flex items-center gap-1">
-                <BsDot size={20} /> <BsCheckLg size={20} className="icon" /> Door to Door (full moving) service &
-                personalized services.
-              </li>
-              <li className="flex items-center gap-1">
-                <BsDot size={20} /> <BsCheckLg size={20} className="" /> Proper packing solution using good
-                quality packing materials.
-              </li>
-              <li className="flex items-center gap-1">
-                <BsDot size={20} /> <BsCheckLg size={20} className="" /> Packing done by expert packers.
-              </li>
-              <li className="flex items-center gap-1">
-                <BsDot size={20} /> <BsCheckLg size={20} className="" /> Personalized loading & unloading
-                services.
-              </li>
-              <li className="flex items-center gap-1">
-                <BsDot size={20} /> <BsCheckLg size={20} className="" /> Comprehensive insurance coverage policy
-                with full moving services.
-              </li>
-              <li className="flex items-center gap-1">
-                <BsDot size={20} /> <BsCheckLg size={20} className="" /> Safe transfer of goods at the respective
-                destinations.
-              </li>
-              <li className="flex items-center gap-1">
-                <BsDot size={20} /> <BsCheckLg size={20} className="" /> Entire operation done under excellent
-                supervision.
-              </li>
-              <li className="flex items-center gap-1">
-                <BsDot size={20} /> <BsCheckLg size={20} className="" /> Excellent customer support.
-              </li>
-              <li className="flex items-center gap-1">
-                <BsDot size={20} /> <BsCheckLg size={20} className="" /> Value for money services – competitive &
-                reasonable price quote.
-              </li>
-              <li className="flex items-center gap-1">
-                <BsDot size={20} /> <BsCheckLg size={20} className="" /> Happy home shifting guaranteed.
-              </li>
-              <li className="flex items-center gap-1">
-                <BsDot size={20} /> <BsCheckLg size={20} className="" /> Less stress level and more happy
-                experiences.
-              </li>
-              <li className="flex items-center gap-1">
-                <BsDot size={20} /> <BsCheckLg size={20} className="" /> Safe warehousing & storage facility.
-              </li>
-              <li className="flex items-center gap-1">
-                <BsDot size={20} /> <BsCheckLg size={20} className="" /> IBA approved consignment facility
-                assitant.
-              </li>
-            </ul>
-          </div>
         </div>
 
         {/* Right Side (Form) */}
@@ -112,18 +96,18 @@ const DomesticShifting = () => {
                 <input
                   type="text"
                   id="name"
-                  className="w-full px-2 py-2 h-10 border-2 placeholder:text-gray-700 border-black mt-3 focus:outline-none bg-[#E1E1E1] text-black"
+                  className="w-full px-2 py-2 h-10 border-2 placeholder:text-gray-500 border-black mt-3 focus:outline-none bg-[#E1E1E1] text-black"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   required
-                  placeholder="Your Name *"
+                  placeholder="Your Name"
                 />
               </div>
               <div className="mb-4">
                 <input
                   type="tel"
                   id="phone"
-                  className="w-full px-2 py-2 h-10 border-2 placeholder:text-gray-700 border-black focus:outline-none bg-[#E1E1E1] text-black"
+                  className="w-full px-2 py-2 h-10 border-2 placeholder:text-gray-500 border-black focus:outline-none bg-[#E1E1E1] text-black"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
                   placeholder="Phone"
@@ -133,17 +117,17 @@ const DomesticShifting = () => {
                 <input
                   type="email"
                   id="email"
-                  className="w-full px-2 py-2 h-10 border-2 placeholder:text-gray-700 border-black focus:outline-none bg-[#E1E1E1] text-black"
+                  className="w-full px-2 py-2 h-10 border-2 placeholder:text-gray-500 border-black focus:outline-none bg-[#E1E1E1] text-black"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
-                  placeholder="Email Address *"
+                  placeholder="Email Address"
                 />
               </div>
               <div className="mb-4">
                 <select
                   id="service"
-                  className="w-full px-2 py-2 h-10 border-2 placeholder:text-gray-700 border-black focus:outline-none bg-[#E1E1E1] text-black"
+                  className="w-full px-2 py-2 h-10 border-2 placeholder:text-gray-500 border-black focus:outline-none bg-[#E1E1E1] text-black"
                   value={service}
                   onChange={(e) => setService(e.target.value)}
                   required
@@ -160,7 +144,7 @@ const DomesticShifting = () => {
               <div className="mb-4">
                 <textarea
                   id="message"
-                  className="w-full px-2 py-2 border-2 border-black placeholder:text-gray-700 focus:outline-none bg-[#E1E1E1] text-black"
+                  className="w-full px-2 py-2 border-2 border-black placeholder:text-gray-500 focus:outline-none bg-[#E1E1E1] text-black"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   rows="6"

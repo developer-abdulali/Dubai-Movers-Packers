@@ -102,7 +102,7 @@ const Footer = () => {
               {/* Input field for user's email */}
               <input
                 type="email"
-                placeholder="Your Email Add"
+                placeholder="Your Email Address"
                 className="w-full p-2 rounded"
                 name="email"
                 value={formData.email}

@@ -7,6 +7,7 @@ const Contact = () => {
     email: "",
     phoneNumber: "",
     message: "",
+    service: "",
   });
 
   const handleInputChange = (e) => {
@@ -28,7 +29,6 @@ const Contact = () => {
         onSubmit={handleSubmit}
         className="mx-auto mt-8 max-w-xl sm:mt-12 md:mt-16 lg:mt-20"
       >
-        {/* Your form inputs go here... */}
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
           <div>
             <label
@@ -46,7 +46,7 @@ const Contact = () => {
                 placeholder="Your name"
                 value={formData.firstName}
                 onChange={handleInputChange}
-                className="block w-full px-3.5 py-2 text-gray-900 border-2 border-black focus:outline-none placeholder:text-gray-800"
+                className="block w-full px-3.5 py-2 text-gray-900 border-2 border-black focus:outline-none placeholder:text-gray-500"
               />
             </div>
           </div>
@@ -66,7 +66,7 @@ const Contact = () => {
                 placeholder="Your last name"
                 value={formData.lastName}
                 onChange={handleInputChange}
-                className="block w-full border-2 px-3.5 py-2 text-gray-900 border-black focus:outline-none placeholder:text-gray-800"
+                className="block w-full border-2 px-3.5 py-2 text-gray-900 border-black focus:outline-none placeholder:text-gray-500"
               />
             </div>
           </div>
@@ -86,7 +86,7 @@ const Contact = () => {
                 placeholder="Your email"
                 value={formData.email}
                 onChange={handleInputChange}
-                className="block w-full border-2 px-3.5 py-2 text-gray-900 border-black focus:outline-none placeholder:text-gray-800"
+                className="block w-full border-2 px-3.5 py-2 text-gray-900 border-black focus:outline-none placeholder:text-gray-500"
               />
             </div>
           </div>
@@ -106,8 +106,34 @@ const Contact = () => {
                 placeholder="Your phone number"
                 value={formData.phoneNumber}
                 onChange={handleInputChange}
-                className="block w-full border-2 px-3.5 py-2 text-gray-900 border-black focus:outline-none placeholder:text-gray-800"
+                className="block w-full border-2 px-3.5 py-2 text-gray-900 border-black focus:outline-none placeholder:text-gray-500"
               />
+            </div>
+          </div>
+          <div className="sm:col-span-2">
+            <label
+              htmlFor="service"
+              className="block text-sm font-semibold leading-6 text-gray-900"
+            >
+              Service
+            </label>
+            <div className="mt-2.5">
+              <select
+                id="service"
+                name="service"
+                value={formData.service}
+                onChange={handleInputChange}
+                required
+                className="w-full px-2 py-2 h-10 border-2 placeholder:text-gray-500 border-black focus:outline-none bg-[#E1E1E1] text-black"
+              >
+                <option value="" disabled>
+                  Select a service
+                </option>
+                <option value="House Shifting">House Shifting</option>
+                <option value="Domestic Shifting">Domestic Shifting</option>
+                <option value="Office Shifting">Office Shifting</option>
+                <option value="Movers and Packers">Movers and Packers</option>
+              </select>
             </div>
           </div>
           <div className="sm:col-span-2">
@@ -125,18 +151,16 @@ const Contact = () => {
                 placeholder="Your message"
                 value={formData.message}
                 onChange={handleInputChange}
-                className="block w-full border-2 px-3.5 py-2 text-gray-900 border-black focus:outline-none placeholder:text-gray-800"
+                className="block w-full border-2 px-3.5 py-2 text-gray-900 border-black focus:outline-none placeholder:text-gray-500"
               ></textarea>
             </div>
           </div>
         </div>
 
-        {/* "Get in Touch" section */}
-
         <div className="mt-8">
           <button
             type="submit"
-            className="block w-full rounded-md bg-indigo-600 px-4 py-3 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus:outline-none focus:ring focus:ring-indigo-600"
+            className="block w-full rounded-md bg-blue-500 px-4 py-3 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue-600 duration-200"
           >
             Let's talk
           </button>
