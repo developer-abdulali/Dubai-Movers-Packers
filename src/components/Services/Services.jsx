@@ -38,7 +38,7 @@ const Services = () => {
             className="mx-auto mb-2 w-full h-[200px] max-w-full"
           />
           <span className="text-xl md:text-2xl">Office Shifting</span> <br />
-          <Link to="/officeShifting">
+          <Link to="/officeRelocation">
             <button className="mt-2 btn btn-primary">Book Now</button>
           </Link>
         </div>

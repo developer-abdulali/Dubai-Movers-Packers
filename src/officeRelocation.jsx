@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const HouseShifting = () => {
+const OfficeShifting = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -15,7 +15,9 @@ const HouseShifting = () => {
   return (
     <div className="max-w-screen-xl mx-auto px-3">
       <div className="bg-[#0772BD] py-3 mt-3">
-        <p className="text-white font-medium text-2xl ml-5">House Shifting</p>
+        <p className="text-white font-medium text-2xl ml-5">
+          Office Relocation
+        </p>
       </div>
       <div className="flex flex-col md:flex-row  rounded-lg">
         <div className="w-full md:w-2/3 md:pr-4 mt-4">
@@ -27,30 +29,38 @@ const HouseShifting = () => {
             />
           </div>
           <h2 className="text-2xl md:text-3xl font-normal mb-4 text-[#DD3333] mt-2">
-            House Shifting
+            Office Relocation
           </h2>
 
           <p className="mb-4 text-base font-medium md:text-md text-black">
-            Our packers and movers will help to relocation of your business to
-            the new place with complete peace of mind without too much
-            interruption in your business. Our team is proud to supply
-            full-service packing solutions additionally to our native and long
-            distance moving services. <br /> <br />
-            Lots of planning and preparation is required for successful and
-            hassle free home relocation in Karachi. Since the ultimate goal is
-            to get all of your household articles packed and moved safely and in
-            cost effective manner, you can’t afford to go wrong in planning and
-            booking movers and packers for home relocation in Karachi. <br />{" "}
+            With the increase in globalisation and technological advancement,
+            office relocation is quite common these days. Often seen as a
+            daunting task, office relocations if planned properly can be carried
+            out smoothly. Furqan Movers & Packers offers customised office
+            relocation services for a seamless relocation of office assets and
+            business continuity.
             <br />
-            We Pack the Goods with Best Quality Material and Take Care that They
-            are not Damaged During Transit. We Load the Goods into the
-            Transportation Vehicle and thereafter Unload the Goods at
-            Destination. At Destination We are able to Verify the Items with the
-            Help of Checklist and there after We Move the Goods to the
-            Destination Place. It does not matter if the Goods are to be Moved
-            on the 1st Floor or 10th Floor. Our Team Takes utmost Care and
-            Compliance so that no Damage Occurs to your Goods while the Goods
-            are Moved to your Place.
+            <br />
+            We have the expertise and resources for implementing effective
+            business relocation solutions and move your office without
+            disruption. We ensure that the downtime is minimum and your business
+            remains uninterrupted.Our office relocation specialists are trained
+            and qualified to relocate all sorts of office equipment, computers,
+            high-end servers, plotters, files, records, furniture, electronic
+            systems and libraries in a hassle free & organized manner. We also
+            offer diverse forms of packaging such as anti-static packaging,
+            vacuum packaging or HD foam packaging & customized crating all under
+            a single roof.
+            <br />
+            <br />
+            Our dedication and will to serve customers better combined with our
+            expertise in office relocation, infrastructure, and technology gives
+            us a cut above the rest. Each business has different office
+            relocation requirements and can vary based on the business size. We
+            help with domestic as well as international relocations. Whether you
+            are a small company office moving across town or a multi-national
+            corporate moving across the country or the globe we can meet your
+            needs with ease.
           </p>
         </div>
 
@@ -137,4 +147,4 @@ const HouseShifting = () => {
   );
 };
 
-export default HouseShifting;
+export default OfficeShifting;

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const HouseShifting = () => {
+const MoversPackers = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -15,7 +15,9 @@ const HouseShifting = () => {
   return (
     <div className="max-w-screen-xl mx-auto px-3">
       <div className="bg-[#0772BD] py-3 mt-3">
-        <p className="text-white font-medium text-2xl ml-5">House Shifting</p>
+        <p className="text-white font-medium text-2xl ml-5">
+          Movers and Packers
+        </p>
       </div>
       <div className="flex flex-col md:flex-row  rounded-lg">
         <div className="w-full md:w-2/3 md:pr-4 mt-4">
@@ -27,30 +29,28 @@ const HouseShifting = () => {
             />
           </div>
           <h2 className="text-2xl md:text-3xl font-normal mb-4 text-[#DD3333] mt-2">
-            House Shifting
+            Movers and Packers
           </h2>
 
           <p className="mb-4 text-base font-medium md:text-md text-black">
-            Our packers and movers will help to relocation of your business to
-            the new place with complete peace of mind without too much
-            interruption in your business. Our team is proud to supply
-            full-service packing solutions additionally to our native and long
-            distance moving services. <br /> <br />
-            Lots of planning and preparation is required for successful and
-            hassle free home relocation in Karachi. Since the ultimate goal is
-            to get all of your household articles packed and moved safely and in
-            cost effective manner, you can’t afford to go wrong in planning and
-            booking movers and packers for home relocation in Karachi. <br />{" "}
+            Our Packers and Movers services in Karachi is a well-recognized
+            packaging and moving service in the industry we are providing quick
+            and reliable packing and best packers and movers services at very
+            suitable moving price in karachi and other cities of Pakistan
             <br />
-            We Pack the Goods with Best Quality Material and Take Care that They
-            are not Damaged During Transit. We Load the Goods into the
-            Transportation Vehicle and thereafter Unload the Goods at
-            Destination. At Destination We are able to Verify the Items with the
-            Help of Checklist and there after We Move the Goods to the
-            Destination Place. It does not matter if the Goods are to be Moved
-            on the 1st Floor or 10th Floor. Our Team Takes utmost Care and
-            Compliance so that no Damage Occurs to your Goods while the Goods
-            are Moved to your Place.
+            <br />
+            <p className="mb-4 text-base font-medium md:text-md text-black">
+              Effective Solutions
+            </p>
+            Our range of services includes Home Relocation, Local shifting and
+            Industrial shifting, domestic packing and moving, Car
+            transportation, Office shifting, Transport service in Karachi,
+            Loading and Unloading service, Packing & unpacking Services and
+            warehouse & storage services etc. Due to our quick and reliable
+            household goods moving services, we have garnered a huge client base
+            across the Karachi city and long distance cities of Pakistan. If you
+            have any query about packers and movers then call us at +92 300
+            1500211 or mail us at info@dubaimoverspackers.com
           </p>
         </div>
 
@@ -137,4 +137,4 @@ const HouseShifting = () => {
   );
 };
 
-export default HouseShifting;
+export default MoversPackers;
