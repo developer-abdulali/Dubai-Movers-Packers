@@ -5,6 +5,7 @@ const GetAQoute = () => {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
+  const [service, setService] = useState(""); 
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -57,18 +58,18 @@ const GetAQoute = () => {
                 <input
                   type="text"
                   id="name"
-                  className="w-full px-3 py-2 h-9 border-2 mt-3 placeholder:text-white/80 rounded-lg focus:outline-none bg-[#0C71B8] focus:border-white text-white"
+                  className="w-full px-2 py-2 h-10 border-2 mt-3 placeholder:text-white/80 rounded-lg focus:outline-none bg-[#0C71B8] focus:border-white text-white"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   required
-                  placeholder="Your Name *"
+                  placeholder="Your Name"
                 />
               </div>
               <div className="mb-4">
                 <input
                   type="phone"
                   id="phone"
-                  className="w-full px-3 py-2 h-9 border-2 placeholder:text-white/80 rounded-lg focus:outline-none focus:border-white bg-[#0C71B8] text-white"
+                  className="w-full px-2 py-2 h-10 border-2 placeholder:text-white/80 rounded-lg focus:outline-none focus:border-white bg-[#0C71B8] text-white"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
                   placeholder="Phone"
@@ -78,17 +79,34 @@ const GetAQoute = () => {
                 <input
                   type="email"
                   id="email"
-                  className="w-full px-3 py-2 h-9 border-2 rounded-lg placeholder:text-white/80 focus:outline-none focus:border-white bg-[#0C71B8] text-white"
+                  className="w-full px-2 py-2 h-10 border-2 rounded-lg placeholder:text-white/80 focus:outline-none focus:border-white bg-[#0C71B8] text-white"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
-                  placeholder="Email Address *"
+                  placeholder="Email Address"
                 />
+              </div>
+              <div className="mb-4">
+                <select
+                  id="service"
+                  className="w-full px-2 py-2 h-10 border-2 placeholder:text-white/80 rounded-lg focus:outline-none focus:border-white bg-[#0C71B8] text-white"
+                  value={service}
+                  onChange={(e) => setService(e.target.value)}
+                  required
+                >
+                  <option value="" disabled>
+                    Select a service
+                  </option>
+                  <option value="House Shifting">House Shifting</option>
+                  <option value="Domestic Shifting">Domestic Shifting</option>
+                  <option value="Office Shifting">Office Shifting</option>
+                  <option value="Movers and Packers">Movers and Packers</option>
+                </select>
               </div>
               <div className="mb-4">
                 <textarea
                   id="message"
-                  className="w-full px-3 py-2 border-2 rounded-lg placeholder:text-white/80 focus:outline-none focus:border-white bg-[#0C71B8] text-white"
+                  className="w-full px-2 py-2 border-2 rounded-lg placeholder:text-white/80 focus:outline-none focus:border-white bg-[#0C71B8] text-white"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   rows="4"
