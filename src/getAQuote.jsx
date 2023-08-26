@@ -5,7 +5,7 @@ const GetAQoute = () => {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
-  const [service, setService] = useState(""); 
+  const [service, setService] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();

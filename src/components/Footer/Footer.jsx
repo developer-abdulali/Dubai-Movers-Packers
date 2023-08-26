@@ -69,7 +69,7 @@ const Footer = () => {
                   Domestic Shifting
                 </a>
               </li>
-             
+
               {/* Add more services here */}
             </ul>
           </div>
