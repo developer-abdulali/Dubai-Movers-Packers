@@ -12,7 +12,7 @@ const Carousel = () => {
         {/* First carousel item (active) */}
         <div className="carousel-item active">
           <img
-            src="/images/sliderimg1.jpeg"
+            src="/images/carouselPic1.png"
             className="d-block w-100 h-[300px] md:h-[600px]"
             alt="Slider Pic 1"
           />
@@ -20,7 +20,7 @@ const Carousel = () => {
         {/* Second carousel item */}
         <div className="carousel-item">
           <img
-            src="/images/sliderimg2.jpg"
+            src="/images/carouselPic2.png"
             className="d-block w-100 h-[300px] md:h-[600px]"
             alt="Slider Pic 2"
           />
@@ -28,7 +28,7 @@ const Carousel = () => {
         {/* Third carousel item */}
         <div className="carousel-item">
           <img
-            src="/images/sliderimg3.jpg"
+            src="/images/sliderimg2.jpg"
             className="d-block w-100 h-[300px] md:h-[600px]"
             alt="Slider Pic 3"
           />
