@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import ArabicText from "./components/ArabicText/ArabicText";
 import Footer from "./components/Footer/Footer";
+import WhatsappContact from "./components/WhatsappContact/WhatsappContact";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -11,5 +12,6 @@ root.render(
     <ArabicText />
     <App />
     <Footer />
+    <WhatsappContact />
   </React.StrictMode>
 );
