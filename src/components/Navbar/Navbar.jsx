@@ -49,6 +49,7 @@ const Navbar = () => {
               >
                 SERVICES
               </a>
+
               <a
                 href="/houseShifting"
                 className={`duration-200 hover:text-blue-500 hidden lg:block ${
@@ -121,7 +122,7 @@ const Navbar = () => {
       <aside
         className={`fixed inset-y-0 left-0 transform ${
           isOpen ? "translate-x-0" : "-translate-x-full"
-        } w-64 sm:w-7/12 bg-white transition duration-300 ease-in-out md:hidden`}
+        } w-60 sm:w-7/12 bg-black opacity-90 text-white transition duration-300 ease-in-out md:hidden`}
       >
         <div className="flex-shrink-0 py-4 px-4">
           <a href="/">
