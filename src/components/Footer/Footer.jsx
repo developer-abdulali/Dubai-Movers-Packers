@@ -125,15 +125,15 @@ const Footer = () => {
             {/* Contact details */}
             <div className="text-white mb-3 flex items-center">
               <FaMapMarkerAlt className="mr-2" />
-              <span>25 D Block 6, Shop # 3, Nursery P.E.C.H.S Karachi.</span>
+              <span>Al Quoz 1 Area in Dubai</span>
             </div>
             <div className="text-white mb-3 flex items-center">
               <FaPhone className="mr-2" />
-              <span>+92 300 1234567</span>
+              <span>+971 54 356 3717</span>
             </div>
             <div className="text-white mb-3 flex items-center">
               <FaEnvelope className="mr-2" />
-              <span>info@dubaimoverspackers.com</span>
+              <span>dubaimoverspackers90@gmail.com</span>
             </div>
             <div className="text-white mb-3 flex items-center">
               <FaClock className="mr-2" />
