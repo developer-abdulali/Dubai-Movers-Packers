@@ -37,10 +37,10 @@ const HouseShifting = () => {
             full-service packing solutions additionally to our native and long
             distance moving services. <br /> <br />
             Lots of planning and preparation is required for successful and
-            hassle free home relocation in Karachi. Since the ultimate goal is
-            to get all of your household articles packed and moved safely and in
+            hassle free home relocation in Dubai. Since the ultimate goal is to
+            get all of your household articles packed and moved safely and in
             cost effective manner, you can’t afford to go wrong in planning and
-            booking movers and packers for home relocation in Karachi. <br />{" "}
+            booking movers and packers for home relocation Dubai. <br />
             <br />
             We Pack the Goods with Best Quality Material and Take Care that They
             are not Damaged During Transit. We Load the Goods into the

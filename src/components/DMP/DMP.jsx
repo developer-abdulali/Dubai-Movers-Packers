@@ -14,7 +14,7 @@ const DMP = () => {
           <div className="font-medium text-[#000000] text-base">
             {/* Introduction */}
             <span>
-              Dubai packers and Movers provides you reliable and efficient
+              Dubai Movers and Packers provides you reliable and efficient
               packing and moving services across Dubai at competitive rates.
               Being a professional packers and movers company we care about your
               valuable items and carefully pack & move them to your desired
@@ -28,8 +28,7 @@ const DMP = () => {
               also provide clearing services in Dubai and let you make sure that
               your goods are to be packed carefully under the supervision of our
               experts. We also help you in providing packing, moving,
-              overcrowded transportation, goods packing, warehouse storage,
-              corporate and commercial relocation.
+              overcrowded transportation, goods packing, commercial relocation.
             </span>
           </div>
         </div>

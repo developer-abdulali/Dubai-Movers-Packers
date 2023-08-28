@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
@@ -22,6 +23,7 @@ const Navbar = () => {
                 />
               </a>
             </div>
+            {/* ... Main navigation links for larger screens ... */}
             <div className="hidden md:flex ml-10 space-x-6 text-md font-medium">
               <a
                 href="/"
@@ -49,7 +51,7 @@ const Navbar = () => {
               </a>
               <a
                 href="/houseShifting"
-                className={`duration-200 hover:text-blue-500 ${
+                className={`duration-200 hover:text-blue-500 hidden lg:block ${
                   location.pathname === "/houseShifting" ? "text-blue-500" : ""
                 }`}
               >
@@ -76,11 +78,12 @@ const Navbar = () => {
               <button
                 onClick={toggleMenu}
                 type="button"
-                className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 focus:ring-offset-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white"
+                className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 "
               >
                 <span className="sr-only">Open main menu</span>
+                {/* ... Your menu icon SVGs ... */}
                 <svg
-                  className={`${isOpen ? "hidden" : "block"} h-6 w-6`}
+                  className={`${isOpen ? "hidden" : "block"} h-9 w-9`}
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -95,7 +98,7 @@ const Navbar = () => {
                   />
                 </svg>
                 <svg
-                  className={`${isOpen ? "block" : "hidden"} h-6 w-6`}
+                  className={`${isOpen ? "block" : "hidden"} h-9 w-9`}
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -113,63 +116,73 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <div
-          className={`${
-            isOpen ? "block" : "hidden"
-          } md:hidden px-2 pt-2 pb-3 text-black bg-white`}
-        >
-          <div className="flex flex-col space-y-5 text-lg font-medium">
-            <a
-              href="/" 
-              className={`duration-200 hover:text-cyan-300 ${
-                location.pathname === "/" ? "text-blue-500" : ""
-              }`}
-            >
-              Home
-            </a>
-            <a
-              href="/about"
-              className={`duration-200 hover:text-cyan-300 ${
-                location.pathname === "/about" ? "text-blue-500" : ""
-              }`}
-            >
-              About
-            </a>
-            <a
-              href="/services"
-              className={`duration-200 hover:text-cyan-300 ${
-                location.pathname === "/services" ? "text-blue-500" : ""
-              }`}
-            >
-              Services
-            </a>
-            <a
-              href="/houseShifting"
-              className={`duration-200 hover:text-cyan-300 ${
-                location.pathname === "/houseShifting" ? "text-blue-500" : ""
-              }`}
-            >
-              House Shifting 24/7
-            </a>
-            <a
-              href="/getAQuote"
-              className={`duration-200 hover:text-cyan-300 ${
-                location.pathname === "/getAQuote" ? "text-blue-500" : ""
-              }`}
-            >
-              Get A Quote
-            </a>
-            <a
-              href="/contact"
-              className={`duration-200 hover:text-cyan-300 ${
-                location.pathname === "/contact" ? "text-blue-500" : ""
-              }`}
-            >
-              Contact
-            </a>
-          </div>
-        </div>
       </nav>
+      {/* Mobile navigation sidebar */}
+      <aside
+        className={`fixed inset-y-0 left-0 transform ${
+          isOpen ? "translate-x-0" : "-translate-x-full"
+        } w-64 sm:w-7/12 bg-white transition duration-300 ease-in-out md:hidden`}
+      >
+        <div className="flex-shrink-0 py-4 px-4">
+          <a href="/">
+            <img
+              src="/images/logo-removebg.png"
+              alt="logo"
+              className="w-[120px] sm:w-[200px] mt-2"
+            />
+          </a>
+        </div>
+        <div className="px-4 py-10 space-y-5 sm:space-y-8 text-lg sm:text-2xl font-medium">
+          <a
+            href="/"
+            className={`block duration-200 hover:text-blue-500 ${
+              location.pathname === "/" ? "text-blue-500" : ""
+            }`}
+          >
+            Home
+          </a>
+          <a
+            href="/about"
+            className={`block duration-200 hover:text-blue-500 ${
+              location.pathname === "/about" ? "text-blue-500" : ""
+            }`}
+          >
+            About
+          </a>
+          <a
+            href="/services"
+            className={`block duration-200 hover:text-blue-500 ${
+              location.pathname === "/services" ? "text-blue-500" : ""
+            }`}
+          >
+            Services
+          </a>
+          <a
+            href="/houseShifting"
+            className={`block duration-200 hover:text-blue-500 ${
+              location.pathname === "/houseShifting" ? "text-blue-500" : ""
+            }`}
+          >
+            House Shifting 24/7
+          </a>
+          <a
+            href="/getAQuote"
+            className={`block duration-200 hover:text-blue-500 ${
+              location.pathname === "/getAQuote" ? "text-blue-500" : ""
+            }`}
+          >
+            Get A Quote
+          </a>
+          <a
+            href="/contact"
+            className={`block duration-200 hover:text-blue-500 ${
+              location.pathname === "/contact" ? "text-blue-500" : ""
+            }`}
+          >
+            Contact
+          </a>
+        </div>
+      </aside>
     </div>
   );
 };

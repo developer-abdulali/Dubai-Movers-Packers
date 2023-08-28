@@ -25,7 +25,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="bg-black p-4 z-200">
+    <div className="bg-black p-4">
       {/* Footer section */}
       <footer className="max-w-screen-xl mx-auto">
         {/* Flex container for layout */}
@@ -36,10 +36,8 @@ const Footer = () => {
             <img src="/images/logo.png" alt="logo" className="mb-4" />
             {/* Company description */}
             <p className="text-white font-medium">
-              Dubai Movers & Packers has been one of the leading Packers &
-              Movers in Karachi, Pakistan. Furqan Movers & Packers have a
-              full-service relocation company that offers packing and
-              transportation services for residential and commercial purposes.
+              Furqan Movers & Packers have a full-service relocation company
+              that offers packing for residential and commercial purposes.
             </p>
           </div>
           {/* List of services */}
@@ -50,27 +48,37 @@ const Footer = () => {
             <ul className="text-white font-medium space-y-5">
               {/* Individual service links */}
               <li>
-                <a href="/moversPackers" className="hover:text-blue-500">
+                <a
+                  href="/moversPackers"
+                  className="hover:text-blue-500 hover:underline duration-300"
+                >
                   Movers and Packers
                 </a>
               </li>
               <li>
-                <a href="/houseShifting" className="hover:text-blue-500">
+                <a
+                  href="/houseShifting"
+                  className="hover:text-blue-500 hover:underline duration-300"
+                >
                   House Shifting
                 </a>
               </li>
               <li>
-                <a href="/officeRelocation" className="hover:text-blue-500">
+                <a
+                  href="/officeRelocation"
+                  className="hover:text-blue-500 hover:underline duration-300"
+                >
                   Office Relocation
                 </a>
               </li>
               <li>
-                <a href="/domesticShifting" className="hover:text-blue-500">
+                <a
+                  href="/domesticShifting"
+                  className="hover:text-blue-500 hover:underline duration-300"
+                >
                   Domestic Shifting
                 </a>
               </li>
-
-              {/* Add more services here */}
             </ul>
           </div>
           {/* Contact form */}
@@ -133,7 +141,12 @@ const Footer = () => {
             </div>
             <div className="text-white mb-3 flex items-center">
               <FaEnvelope className="mr-2" />
-              <span>dubaimoverspackers90@gmail.com</span>
+              <a
+                href="mailto:dubaimoverspackers90@gmail.com"
+                className="hover:text-blue-500"
+              >
+                dubaimoverspackers90@gmail.com
+              </a>
             </div>
             <div className="text-white mb-3 flex items-center">
               <FaClock className="mr-2" />

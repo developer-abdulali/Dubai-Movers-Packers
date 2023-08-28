@@ -24,7 +24,7 @@ const WhyUs = () => {
         </p>
         <p className="mb-4 text-base font-medium md:text-md text-black">
           We watch our costs very closely and have become very efficient during
-          our 20 years as a moving company. When we save money, we pass that
+          our 10 years as a moving company. When we save money, we pass that
           along to our customers in the form of lower overall moving costs.
           <br />
           <br /> WE HANDLE EVERYTHING FOR YOUR MOVE <br /> Movers and Packers is
@@ -44,7 +44,7 @@ const WhyUs = () => {
         <p className="text-white text-xs font-semibold mt-2">
           To inquire about our services further, kindly submit the form below.
         </p>
-    
+
         <div className="md:max-w-xl mx-auto mt-4">
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
@@ -80,22 +80,22 @@ const WhyUs = () => {
               />
             </div>
             <div className="mb-4">
-                <select
-                  id="service"
-                  className="w-full px-2 py-2 h-10 border-2 rounded-lg focus:outline-none focus:border-white bg-[#0C71B8] text-white"
-                  value={service}
-                  onChange={(e) => setService(e.target.value)}
-                  required
-                >
-                  <option value="" disabled>
-                    Select a service
-                  </option>
-                  <option value="House Shifting">House Shifting</option>
-                  <option value="Domestic Shifting">Domestic Shifting</option>
-                  <option value="Office Shifting">Office Shifting</option>
-                  <option value="Movers and Packers">Movers and Packers</option>
-                </select>
-              </div>
+              <select
+                id="service"
+                className="w-full px-2 py-2 h-10 border-2 rounded-lg focus:outline-none focus:border-white bg-[#0C71B8] text-white"
+                value={service}
+                onChange={(e) => setService(e.target.value)}
+                required
+              >
+                <option value="" disabled>
+                  Select a service
+                </option>
+                <option value="House Shifting">House Shifting</option>
+                <option value="Domestic Shifting">Domestic Shifting</option>
+                <option value="Office Shifting">Office Shifting</option>
+                <option value="Movers and Packers">Movers and Packers</option>
+              </select>
+            </div>
             <div className="mb-4">
               <textarea
                 id="message"

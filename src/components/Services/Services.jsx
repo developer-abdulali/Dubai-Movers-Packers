@@ -13,13 +13,13 @@ const Services = () => {
             src="/images/HouseShifting.jpeg"
             alt="House Shifting"
             className="mx-auto mb-2 w-full h-[200px] max-w-full"
-            
           />
           <span className="text-xl md:text-2xl">House Shifting</span> <br />
           <Link to="/houseShifting">
             <button className="mt-2 btn btn-primary">Book Now</button>
           </Link>
         </div>
+
         <div className="text-center border border-gray-200 p-2 hover:scale-105 duration-200 hover:shadow-md hover:rounded-md">
           <img
             src="/images/domesticShifting.png"
@@ -42,6 +42,7 @@ const Services = () => {
             <button className="mt-2 btn btn-primary">Book Now</button>
           </Link>
         </div>
+        <div className="sm:hidden lg:block"></div>
         <div className="text-center border border-gray-200 p-2 hover:scale-105 duration-200 hover:shadow-md hover:rounded-md">
           <img
             src="/images/MoversPackers.jpeg"
@@ -53,11 +54,9 @@ const Services = () => {
             <button className="mt-2 btn btn-primary">Book Now</button>
           </Link>
         </div>
-       
       </div>
     </div>
   );
 };
 
 export default Services;
-
