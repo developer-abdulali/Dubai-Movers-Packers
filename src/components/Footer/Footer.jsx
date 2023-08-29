@@ -157,7 +157,7 @@ const Footer = () => {
         {/* Copyright and rights reserved */}
         <div className="text-white text-center mt-6">
           <p>
-            &copy; {new Date().getFullYear()} Furqan Movers & Packers. All
+            &copy; {new Date().getFullYear()} Dubai Movers & Packers. All
             rights reserved. Developed by : Abdul Ali
           </p>
         </div>
