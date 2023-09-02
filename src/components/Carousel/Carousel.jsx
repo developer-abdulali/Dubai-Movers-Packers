@@ -15,6 +15,7 @@ const Carousel = () => {
             src="/images/carouselPic1.png"
             className="d-block w-100 h-[300px] md:h-[600px]"
             alt="Slider Pic 1"
+            loading="lazy" // Enable lazy loading for this image
           />
         </div>
         {/* Second carousel item */}
@@ -23,6 +24,7 @@ const Carousel = () => {
             src="/images/carouselPic2.png"
             className="d-block w-100 h-[300px] md:h-[600px]"
             alt="Slider Pic 2"
+            loading="lazy" // Enable lazy loading for this image
           />
         </div>
         {/* Third carousel item */}
@@ -31,10 +33,11 @@ const Carousel = () => {
             src="/images/sliderimg2.jpg"
             className="d-block w-100 h-[300px] md:h-[600px]"
             alt="Slider Pic 3"
+            loading="lazy" // Enable lazy loading for this image
           />
         </div>
       </div>
-      
+
       {/* Previous slide button */}
       <button
         className="carousel-control-prev"
@@ -45,7 +48,7 @@ const Carousel = () => {
         <span className="carousel-control-prev-icon" aria-hidden="true"></span>
         <span className="visually-hidden">Previous</span>
       </button>
-      
+
       {/* Next slide button */}
       <button
         className="carousel-control-next"
@@ -53,10 +56,7 @@ const Carousel = () => {
         data-bs-target="#carouselExampleControls"
         data-bs-slide="next"
       >
-        <span
-          className="carousel-control-next-icon"
-          aria-hidden="true"
-        ></span>
+        <span className="carousel-control-next-icon" aria-hidden="true"></span>
         <span className="visually-hidden">Next</span>
       </button>
     </div>
