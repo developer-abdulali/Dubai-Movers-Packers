@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
-import "aos/dist/aos.css"; 
+import "aos/dist/aos.css";
 const Carousel = () => {
   useEffect(() => {
     AOS.init();
@@ -17,37 +17,40 @@ const Carousel = () => {
         {/* First carousel item (active) */}
         <div
           className="carousel-item active"
-          data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" // Specify the animation type here
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="200" // Specify the animation type here
         >
           <img
             src="/images/carouselPic1.png"
             className="d-block w-100 h-[300px] md:h-[600px]"
             alt="Slider Pic 1"
-            loading="lazy" // Enable lazy loading for this image
           />
         </div>
         {/* Second carousel item */}
         <div
           className="carousel-item"
-          data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"// Specify the animation type here
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="200" // Specify the animation type here
         >
           <img
             src="/images/carouselPic2.png"
             className="d-block w-100 h-[300px] md:h-[600px]"
             alt="Slider Pic 2"
-            loading="lazy" // Enable lazy loading for this image
           />
         </div>
         {/* Third carousel item */}
         <div
           className="carousel-item"
-          data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"// Specify the animation type here
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="200" // Specify the animation type here
         >
           <img
             src="/images/sliderimg2.jpg"
             className="d-block w-100 h-[300px] md:h-[600px]"
             alt="Slider Pic 3"
-            loading="lazy" // Enable lazy loading for this image
           />
         </div>
       </div>
