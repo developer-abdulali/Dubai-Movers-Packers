@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const WhyUs = () => {
   const [name, setName] = useState("");
@@ -11,11 +13,19 @@ const WhyUs = () => {
     e.preventDefault();
     console.log("Form Data:", { name, email, phone, message });
   };
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   return (
     <div className="flex flex-col md:flex-row my-3 mt-[-30px] max-w-screen-xl mx-auto px-3 gap-2">
       {/* Left Side (Why Us) */}
-      <div className="w-full md:w-2/3">
+      <div
+        className="w-full md:w-2/3"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="200"
+      >
         <h2 className="text-2xl md:text-4xl font-medium mb-4 text-[#0C71B8]">
           WHY DUBAI MOVERS
         </h2>
@@ -39,7 +49,12 @@ const WhyUs = () => {
       </div>
 
       {/* Right Side (Form) */}
-      <div className="w-full md:w-[500px] bg-[#0872BB] p-4">
+      <div
+        className="w-full md:w-[500px] bg-[#0872BB] p-4"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        data-aos-delay="200"
+      >
         <p className="text-white text-3xl mt-2">REQUEST A QUOTE</p>
         <p className="text-white text-xs font-semibold mt-2">
           To inquire about our services further, kindly submit the form below.

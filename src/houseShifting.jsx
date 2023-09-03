@@ -1,4 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 const HouseShifting = () => {
   const [name, setName] = useState("");
@@ -11,13 +14,17 @@ const HouseShifting = () => {
     e.preventDefault();
     console.log("Form Data:", { name, email, phone, message, service });
   };
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
 
   return (
     <div className="max-w-screen-xl mx-auto px-3">
-      <div className="bg-[#0772BD] py-3 mt-3">
+      <div className="bg-[#0772BD] py-3 mt-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
         <p className="text-white font-medium text-2xl ml-5">House Shifting</p>
       </div>
-      <div className="flex flex-col md:flex-row  rounded-lg">
+      <div className="flex flex-col md:flex-row  rounded-lg"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
         <div className="w-full md:w-2/3 md:pr-4 mt-4">
           <div className="p-1 border">
             <img
@@ -26,11 +33,11 @@ const HouseShifting = () => {
               className="w-full h-auto"
             />
           </div>
-          <h2 className="text-2xl md:text-3xl font-normal mb-4 text-[#DD3333] mt-2">
+          <h2 className="text-2xl md:text-3xl font-normal mb-4 text-[#DD3333] mt-2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
             House Shifting
           </h2>
 
-          <p className="mb-4 text-base font-medium md:text-md text-black">
+          <p className="mb-4 text-base font-medium md:text-md text-black" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
             Our packers and movers will help to relocation of your business to
             the new place with complete peace of mind without too much
             interruption in your business. Our team is proud to supply
@@ -56,7 +63,7 @@ const HouseShifting = () => {
 
         {/* Right Side (Form) */}
 
-        <div className="w-full md:w-1/3 bg-[#E1E1E1] p-4 mt-4 md:mt-0 h-[650px]">
+        <div className="w-full md:w-1/3 bg-[#E1E1E1] p-4 mt-4 md:mt-0 h-[650px]" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
           <p className="text-black text-2xl md:text-3xl mt-2 mb-4">
             QUICK INQUIRY
           </p>

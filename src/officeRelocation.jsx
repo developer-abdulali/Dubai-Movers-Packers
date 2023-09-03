@@ -1,5 +1,6 @@
-import React, { useState } from "react";
-
+import React, { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const OfficeShifting = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -11,15 +12,28 @@ const OfficeShifting = () => {
     e.preventDefault();
     console.log("Form Data:", { name, email, phone, message, service });
   };
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   return (
     <div className="max-w-screen-xl mx-auto px-3">
-      <div className="bg-[#0772BD] py-3 mt-3">
+      <div
+        className="bg-[#0772BD] py-3 mt-3"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="200"
+      >
         <p className="text-white font-medium text-2xl ml-5">
           Office Relocation
         </p>
       </div>
-      <div className="flex flex-col md:flex-row  rounded-lg">
+      <div
+        className="flex flex-col md:flex-row  rounded-lg"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="200"
+      >
         <div className="w-full md:w-2/3 md:pr-4 mt-4">
           <div className="p-1 border">
             <img
@@ -66,7 +80,12 @@ const OfficeShifting = () => {
 
         {/* Right Side (Form) */}
 
-        <div className="w-full md:w-1/3 bg-[#E1E1E1] p-4 mt-4 md:mt-0 h-[650px]">
+        <div
+          className="w-full md:w-1/3 bg-[#E1E1E1] p-4 mt-4 md:mt-0 h-[650px]"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+        >
           <p className="text-black text-2xl md:text-3xl mt-2 mb-4">
             QUICK INQUIRY
           </p>

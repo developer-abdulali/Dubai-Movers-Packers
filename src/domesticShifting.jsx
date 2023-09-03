@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const DomesticShifting = () => {
   const [name, setName] = useState("");
@@ -12,15 +14,28 @@ const DomesticShifting = () => {
     console.log("Form Data:", { name, email, phone, message, service });
   };
 
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <div className="max-w-screen-xl mx-auto px-3">
+    <div
+      className="max-w-screen-xl mx-auto px-3"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-delay="200"
+    >
       <div className="bg-[#0772BD] py-3 mt-3">
         <p className="text-white font-medium text-2xl ml-5">
           Domestic Shifting
         </p>
       </div>
       <div className="flex flex-col md:flex-row  rounded-lg">
-        <div className="w-full md:w-2/3 md:pr-4 mt-4">
+        <div
+          className="w-full md:w-2/3 md:pr-4 mt-4"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+        >
           <div className="p-1 border">
             <img
               src="/images/2combineimgs.png"
@@ -33,7 +48,7 @@ const DomesticShifting = () => {
           </h2>
 
           <p className="mb-4 text-base font-medium md:text-md text-black">
-            Our professional movers and packers in Karachi can do it all. We’re
+            Our professional movers and packers in Karachi can do it all. We are
             a one-stop shop, helping with all home moving and packing
             situations. Our large fleet of modern, fully-equipped truck keeps us
             on the cutting edge of convenience and reliability. Indian Movers
@@ -85,7 +100,12 @@ const DomesticShifting = () => {
         </div>
 
         {/* Right Side (Form) */}
-        <div className="w-full md:w-1/3 bg-[#E1E1E1] p-4 mt-4 md:mt-0 h-[650px]">
+        <div
+          className="w-full md:w-1/3 bg-[#E1E1E1] p-4 mt-4 md:mt-0 h-[650px]"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+        >
           <p className="text-black text-2xl md:text-3xl mt-2 mb-4">
             QUICK INQUIRY
           </p>

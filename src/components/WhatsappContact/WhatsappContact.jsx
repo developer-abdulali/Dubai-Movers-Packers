@@ -1,4 +1,5 @@
 import React from "react";
+
 import { BsWhatsapp } from "react-icons/bs";
 
 const WhatsappContact = () => {

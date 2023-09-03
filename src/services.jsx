@@ -1,14 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import "aos/dist/aos.css"; // Import the CSS
+
+// Import the aos library
+import AOS from "aos";
 
 const Services = () => {
+  useEffect(() => {
+    AOS.init(); // Initialize AOS
+  }, []);
+
   return (
     <div className="container mx-auto py-4">
       <div className="text-center text-3xl md:text-4xl mt-4">
         <span>Our Services</span>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 max-w-screen-xl mx-auto px-3">
-        <div className="text-center border border-gray-200 p-2 hover:scale-105 duration-200 hover:shadow-md hover:rounded-md">
+        <div
+          className="text-center border border-gray-200 p-2 hover:scale-105 duration-200 hover:shadow-md hover:rounded-md"
+          data-aos="fade-up" // Specify the animation type here
+          data-aos-duration="1000" // Animation duration in milliseconds
+          data-aos-delay="100" // Delay before animation starts in milliseconds
+        >
           <img
             src="/images/HouseShifting.jpeg"
             alt="House Shifting"
@@ -20,7 +33,12 @@ const Services = () => {
           </Link>
         </div>
 
-        <div className="text-center border border-gray-200 p-2 hover:scale-105 duration-200 hover:shadow-md hover:rounded-md">
+        <div
+          className="text-center border border-gray-200 p-2 hover:scale-105 duration-200 hover:shadow-md hover:rounded-md"
+          data-aos="fade-up" // Specify the animation type here
+          data-aos-duration="1000" // Animation duration in milliseconds
+          data-aos-delay="200" // Delay before animation starts in milliseconds
+        >
           <img
             src="/images/domesticShifting.png"
             alt="Domestic Shifting"
@@ -31,7 +49,12 @@ const Services = () => {
             <button className="mt-2 btn btn-primary">Book Now</button>
           </Link>
         </div>
-        <div className="text-center border border-gray-200 p-2 hover:scale-105 duration-200 hover:shadow-md hover:rounded-md">
+        <div
+          className="text-center border border-gray-200 p-2 hover:scale-105 duration-200 hover:shadow-md hover:rounded-md"
+          data-aos="fade-up" // Specify the animation type here
+          data-aos-duration="1000" // Animation duration in milliseconds
+          data-aos-delay="300" // Delay before animation starts in milliseconds
+        >
           <img
             src="/images/officeShifting.png"
             alt="Office Shifting"
@@ -43,7 +66,12 @@ const Services = () => {
           </Link>
         </div>
         <div className="sm:hidden lg:block"></div>
-        <div className="text-center border border-gray-200 p-2 hover:scale-105 duration-200 hover:shadow-md hover:rounded-md">
+        <div
+          className="text-center border border-gray-200 p-2 hover:scale-105 duration-200 hover:shadow-md hover:rounded-md"
+          data-aos="fade-up" // Specify the animation type here
+          data-aos-duration="1000" // Animation duration in milliseconds
+          data-aos-delay="400" // Dlay before animation starts in millisecondse
+        >
           <img
             src="/images/MoversPackers.jpeg"
             alt="Movers packers"

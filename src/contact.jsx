@@ -1,4 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -22,9 +25,13 @@ const Contact = () => {
     e.preventDefault();
     console.log("Form data submitted:", formData);
   };
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
 
   return (
-    <div className="bg-white px-4 pb-5">
+    <div className="bg-white px-4 pb-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
       <form
         onSubmit={handleSubmit}
         className="mx-auto mt-8 max-w-xl sm:mt-12 md:mt-16 lg:mt-20"

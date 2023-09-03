@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import the AOS CSS file
+import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
 
 const TestimonialSlider = () => {
+  useEffect(() => {
+    AOS.init(); // Initialize AOS
+  }, []);
+
   const settings = {
     dots: true,
     infinite: true,
@@ -21,7 +27,9 @@ const TestimonialSlider = () => {
       <div className="absolute inset-y-0 right-1/2 z-[-10] mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>
       <div className="mx-auto max-w-2xl lg:max-w-4xl">
         <Slider {...settings}>
-          <div>
+          <div data-aos="fade-up">
+            {" "}
+            {/* Add AOS animation here */}
             <blockquote className="text-center text-lg font-medium leading-8 text-white sm:text-2xl sm:leading-9">
               <p>
                 “I think this is the best of all Movers and Packers. All boys
@@ -46,9 +54,11 @@ const TestimonialSlider = () => {
             </figcaption>
           </div>
 
-          {/* Add more testimonial slides */}
+          {/* Add more testimonial slides with AOS animations */}
 
-          <div>
+          <div data-aos="fade-up">
+            {" "}
+            {/* Add AOS animation here */}
             <blockquote className="text-center text-xl font-medium leading-8 text-white sm:text-2xl sm:leading-9">
               <p>
                 “All the service men who came for packing did and excellent job.
@@ -73,7 +83,7 @@ const TestimonialSlider = () => {
             </figcaption>
           </div>
 
-          {/* Add more testimonial slides */}
+          {/* Add more testimonial slides with AOS animations */}
         </Slider>
       </div>
     </section>

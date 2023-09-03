@@ -1,9 +1,18 @@
-
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <div className="max-w-screen-xl mx-auto mt-3 px-3 md:px-6 lg:px-8">
+    <div
+      className="max-w-screen-xl mx-auto mt-3 px-3 md:px-6 lg:px-8"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-delay="200"
+    >
       <div className="bg-[#0772BD] py-3">
         <p className="text-white font-medium text-2xl ml-5">About Us</p>
       </div>

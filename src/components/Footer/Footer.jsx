@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import the AOS CSS file
 
 const Footer = () => {
   // State to manage form input data
@@ -8,6 +10,10 @@ const Footer = () => {
     phone: "",
     email: "",
   });
+
+  useEffect(() => {
+    AOS.init(); // Initialize AOS
+  }, []);
 
   // Event handler for input changes
   const handleInputChange = (e) => {
@@ -27,7 +33,12 @@ const Footer = () => {
   return (
     <div className="bg-black p-4">
       {/* Footer section */}
-      <footer className="max-w-screen-xl mx-auto">
+      <footer
+        className="max-w-screen-xl mx-auto"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="200"
+      >
         {/* Flex container for layout */}
         <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0 md:space-x-4">
           {/* Logo and description */}
@@ -82,7 +93,12 @@ const Footer = () => {
             </ul>
           </div>
           {/* Contact form */}
-          <div className="md:w-1/3">
+          <div
+            className="md:w-1/3"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
             {/* Section title */}
             <p className="text-white font-semibold mb-3">GET A QUOTE</p>
             {/* Form for user input */}
@@ -127,7 +143,12 @@ const Footer = () => {
             </form>
           </div>
           {/* Contact information */}
-          <div className="w-full md:w-1/3">
+          <div
+            className="w-full md:w-1/3"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
             {/* Section title */}
             <p className="font-semibold text-white mb-4 mt-4">GET IN TOUCH</p>
             {/* Contact details */}
@@ -157,8 +178,8 @@ const Footer = () => {
         {/* Copyright and rights reserved */}
         <div className="text-white text-center mt-6">
           <p>
-            &copy; {new Date().getFullYear()} Dubai Movers & Packers. All
-            rights reserved. Developed by : Abdul Ali
+            &copy; {new Date().getFullYear()} Dubai Movers & Packers. All rights
+            reserved.
           </p>
         </div>
       </footer>

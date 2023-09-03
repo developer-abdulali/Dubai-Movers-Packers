@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import the AOS CSS file
 
 const DMP = () => {
+  useEffect(() => {
+    AOS.init(); // Initialize AOS
+  }, []);
+
   return (
     <>
       {/* Welcome section */}
-      <div className="flex flex-col items-center justify-between md:flex-row max-w-screen-xl mx-auto px-3 mt-5">
+      <div
+        className="flex flex-col items-center justify-between md:flex-row max-w-screen-xl mx-auto px-3 mt-5"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        data-aos-delay="200"
+      >
         <div>
           {/* Heading */}
           <h1 className="font-base text-3xl md:px-0 text-[#494949]">
@@ -43,7 +54,10 @@ const DMP = () => {
       </div>
 
       {/* Additional Information */}
-      <div className="flex flex-col md:flex-row items-center justify-between max-w-screen-xl mx-auto px-3 mt-5 space-x-5 md:px-0">
+      <div
+        className="flex flex-col md:flex-row items-center justify-between max-w-screen-xl mx-auto px-3 mt-5 space-x-5 md:px-0"
+        data-aos="fade-up" // Specify the animation type here
+      >
         {/* Border with images */}
         <div className="border p-1">
           <img src="/images/2combineimages.png" alt="Images" />
