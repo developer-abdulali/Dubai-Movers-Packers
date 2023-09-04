@@ -1,34 +1,38 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock } from "react-icons/fa";
 import AOS from "aos";
+import emailjs from "@emailjs/browser";
+
 import "aos/dist/aos.css"; // Import the AOS CSS file
 
 const Footer = () => {
-  // State to manage form input data
-  const [formData, setFormData] = useState({
-    name: "",
-    phone: "",
-    email: "",
-  });
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_3tvcqgi",
+        "template_st1fs5h",
+        form.current,
+        "gFg6G-PYYkiH3Thoe"
+      )
+      .then(
+        (result) => {
+          <div>{alert("form submitted")}</div>;
+          form.current.reset(); // Reset the form fields
+
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
 
   useEffect(() => {
     AOS.init(); // Initialize AOS
   }, []);
-
-  // Event handler for input changes
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-  };
-
-  // Event handler for form submission
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form Data:", formData);
-  };
 
   return (
     <div className="bg-black p-4">
@@ -102,15 +106,15 @@ const Footer = () => {
             {/* Section title */}
             <p className="text-white font-semibold mb-3">GET A QUOTE</p>
             {/* Form for user input */}
-            <form onSubmit={handleSubmit} className="space-y-2">
+            <form ref={form} onSubmit={sendEmail} className="space-y-2">
               {/* Input field for user's name */}
               <input
                 type="text"
                 placeholder="Your Name"
                 className="w-full p-2 rounded"
-                name="name"
-                value={formData.name}
-                onChange={handleInputChange}
+                name="user_name"
+             
+                autoComplete="name"
                 required
               />
               {/* Input field for user's phone */}
@@ -118,9 +122,8 @@ const Footer = () => {
                 type="number"
                 placeholder="Your Phone"
                 className="w-full p-2 rounded"
-                name="phone"
-                value={formData.phone}
-                onChange={handleInputChange}
+                name="phoneNumber"
+                autoComplete="tel"
                 required
               />
               {/* Input field for user's email */}
@@ -128,9 +131,10 @@ const Footer = () => {
                 type="email"
                 placeholder="Your Email Address"
                 className="w-full p-2 rounded"
-                name="email"
-                value={formData.email}
-                onChange={handleInputChange}
+                
+                name="user_email"
+                
+                autoComplete="email"
                 required
               />
               {/* Submit button */}

@@ -52,7 +52,7 @@ const WhyUs = () => {
       {/* Right Side (Form) */}
       <div
         className="w-full md:w-[500px] bg-[#0872BB] p-4"
-        data-aos="fade-up" // Add AOS animation here
+        data-aos="fade-left" // Add AOS animation here
         data-aos-duration="1000" // Animation duration in milliseconds
         data-aos-delay="200" // Delay before animation starts in milliseconds
       >
