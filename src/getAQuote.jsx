@@ -1,3 +1,5 @@
+
+
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
@@ -29,38 +31,36 @@ const WhyUs = () => {
   return (
     <div className="flex flex-col md:flex-row my-3 max-w-screen-xl mx-auto px-3 gap-2">
       {/* Left Side (Why Us) */}
-      {isSubmitted ? (
-        false
-      ) : (
-        <div
-          className="w-full md:w-2/3"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="200"
-        >
-          <h2 className="text-2xl md:text-4xl font-medium mb-4 text-[#0C71B8]">
-            WHY DUBAI MOVERS
-          </h2>
-          <p className="mb-4 text-base md:text-md text-black">
-            <strong>AFFORDABLE YET HIGH-QUALITY MOVING SERVICES</strong>
-          </p>
-          <p className="mb-4 text-base font-medium md:text-md text-black">
-            We watch our costs very closely and have become very efficient
-            during our 10 years as a moving company. When we save money, we pass
-            that along to our customers in the form of lower overall moving
-            costs.
-            <br />
-            <br />
-            WE HANDLE EVERYTHING FOR YOUR MOVE <br /> Movers and Packers is made
-            up of highly prompt individuals who are eager about making a
-            positive impression on other people's through relocation to a
-            foreign country that they will never forget. <br /> <br />
-            PROFESSIONAL AND PERSONAL CUSTOMER SUPPORT <br /> <br /> We
-            cultivate a friendly attitude by treating our customers with respect
-            and decency. We acknowledge that what truly matters is having a
-            healthy and strong relationship with all of our customers.
-          </p>
-        </div>
+      {isSubmitted ? false:(
+
+      <div
+        className="w-full md:w-2/3"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="200"
+      >
+        <h2 className="text-2xl md:text-4xl font-medium mb-4 text-[#0C71B8]">
+          WHY DUBAI MOVERS
+        </h2>
+        <p className="mb-4 text-base md:text-md text-black">
+          <strong>AFFORDABLE YET HIGH-QUALITY MOVING SERVICES</strong>
+        </p>
+        <p className="mb-4 text-base font-medium md:text-md text-black">
+          We watch our costs very closely and have become very efficient during
+          our 10 years as a moving company. When we save money, we pass that
+          along to our customers in the form of lower overall moving costs.
+          <br />
+          <br />
+          WE HANDLE EVERYTHING FOR YOUR MOVE <br /> Movers and Packers is made
+          up of highly prompt individuals who are eager about making a positive
+          impression on other people's through relocation to a foreign country
+          that they will never forget. <br /> <br />
+          PROFESSIONAL AND PERSONAL CUSTOMER SUPPORT <br /> <br /> We cultivate
+          a friendly attitude by treating our customers with respect and
+          decency. We acknowledge that what truly matters is having a healthy
+          and strong relationship with all of our customers.
+        </p>
+      </div>
       )}
 
       {/* Right Side (Form) */}
@@ -136,7 +136,9 @@ const WhyUs = () => {
                   className="w-full px-2 py-2 h-10 border-2 rounded-lg focus:outline-none focus:border-white bg-[#0C71B8] text-white"
                   required
                 >
-                  <option value="">Select a service</option>
+                  <option value="">
+                    Select a service
+                  </option>
                   <option value="House Shifting">House Shifting</option>
                   <option value="Domestic Shifting">Domestic Shifting</option>
                   <option value="Office Shifting">Office Shifting</option>
@@ -168,3 +170,4 @@ const WhyUs = () => {
 };
 
 export default WhyUs;
+
