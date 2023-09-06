@@ -7,6 +7,7 @@ import AOS from "aos";
 
 const Services = () => {
   useEffect(() => {
+    document.title = "Services - Dubai Movers & Packers";
     AOS.init(); // Initialize AOS
   }, []);
 

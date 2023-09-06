@@ -1,39 +1,41 @@
-import React, { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
+import React, { useRef, useState, useEffect } from "react";
+import emailjs from "emailjs-com";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-const WhyUs = () => {
+const GetAQuote = () => {
   const form = useRef();
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_3tvcqgi",
-        "template_st1fs5h",
+    try {
+      const result = await emailjs.sendForm(
+        "YOUR_SERVICE_ID_HERE", // Replace with your actual service ID
+        "YOUR_TEMPLATE_ID_HERE", // Replace with your actual template ID
         form.current,
-        "gFg6G-PYYkiH3Thoe"
-      )
-      .then(
-        (result) => {
-          setIsSubmitted(true);
-          form.current.reset();
-        },
-        (error) => {
-          console.log(error.text);
-        }
+        "YOUR_USER_ID_HERE" // Replace with your actual user ID
       );
+      console.log(result.text);
+      setIsSubmitted(true);
+      form.current.reset();
+    } catch (error) {
+      console.error("Email send error:", error);
+    }
   };
+
+  useEffect(() => {
+    document.title = "GET A QUOTE - Dubai Movers & Packers";
+    AOS.init();
+  }, []);
 
   return (
     <div className="flex flex-col md:flex-row my-3 max-w-screen-xl mx-auto px-3 gap-2">
       {/* Left Side (Why Us) */}
-      {isSubmitted ? (
-        false
-      ) : (
+      {!isSubmitted && (
         <div
-          className="w-full md:w-2/3"
+          className="w-full md:w-2/3 md:mt-10"
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-delay="200"
@@ -88,7 +90,7 @@ const WhyUs = () => {
         </div>
       ) : (
         <div
-          className="w-full md:w-96 bg-[#0872BB] p-4"
+          className="w-full md:w-[600px] bg-[#0872BB] p-2"
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-delay="200"
@@ -167,4 +169,4 @@ const WhyUs = () => {
   );
 };
 
-export default WhyUs;
+export default GetAQuote;
