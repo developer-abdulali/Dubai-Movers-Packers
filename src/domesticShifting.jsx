@@ -102,7 +102,7 @@ const DomesticShifting = () => {
         {/* Right Side (Form) */}
         <div
           className="w-full md:w-1/3 bg-[#E1E1E1] p-4 mt-4 md:mt-0 h-[650px]"
-          data-aos="fade-left"
+          data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-delay="200"
         >

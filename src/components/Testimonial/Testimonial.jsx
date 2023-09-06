@@ -82,8 +82,6 @@ const TestimonialSlider = () => {
               </div>
             </figcaption>
           </div>
-
-          {/* Add more testimonial slides with AOS animations */}
         </Slider>
       </div>
     </section>

@@ -18,14 +18,24 @@ const MoversPackers = () => {
   }, []);
 
   return (
-    <div className="max-w-screen-xl mx-auto px-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+    <div
+      className="max-w-screen-xl mx-auto px-3"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-delay="200"
+    >
       <div className="bg-[#0772BD] py-3 mt-3">
         <p className="text-white font-medium text-2xl ml-5">
           Movers and Packers
         </p>
       </div>
       <div className="flex flex-col md:flex-row  rounded-lg">
-        <div className="w-full md:w-2/3 md:pr-4 mt-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        <div
+          className="w-full md:w-2/3 md:pr-4 mt-4"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+        >
           <div className="p-1 border">
             <img
               src="/images/2combineimgs.png"
@@ -61,7 +71,12 @@ const MoversPackers = () => {
 
         {/* Right Side (Form) */}
 
-        <div className="w-full md:w-1/3 bg-[#E1E1E1] p-4 mt-4 md:mt-0 h-[650px]" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+        <div
+          className="w-full md:w-1/3 bg-[#E1E1E1] p-4 mt-4 md:mt-0 h-[650px]"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+        >
           <p className="text-black text-2xl md:text-3xl mt-2 mb-4">
             QUICK INQUIRY
           </p>

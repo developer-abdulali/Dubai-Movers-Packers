@@ -22,7 +22,6 @@ const Footer = () => {
         (result) => {
           <div>{alert("form submitted")}</div>;
           form.current.reset(); // Reset the form fields
-
         },
         (error) => {
           console.log(error.text);
@@ -113,7 +112,6 @@ const Footer = () => {
                 placeholder="Your Name"
                 className="w-full p-2 rounded"
                 name="user_name"
-             
                 autoComplete="name"
                 required
               />
@@ -131,9 +129,7 @@ const Footer = () => {
                 type="email"
                 placeholder="Your Email Address"
                 className="w-full p-2 rounded"
-                
                 name="user_email"
-                
                 autoComplete="email"
                 required
               />
