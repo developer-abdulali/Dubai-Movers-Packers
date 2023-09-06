@@ -81,48 +81,12 @@ const HouseShifting = () => {
               the destination place. It does not matter if the goods are to be
               moved on the 1st floor or 10th floor. Our team takes utmost care
               and compliance so that no damage occurs to your goods while they
-              are moved to your place.
+              are moved to your pl
             </p>
           </div>
         </>
       )}
       <div className="flex flex-col md:flex-row  rounded-lg">
-        <div className="w-full md:w-2/3 md:pr-4 mt-4">
-          <div className="p-1 border">
-            <img
-              src="/images/2combineimgs.png"
-              alt="combine"
-              className="w-full h-auto"
-            />
-          </div>
-          <h2 className="text-2xl md:text-3xl font-normal mb-4 text-[#DD3333] mt-2">
-            House Shifting
-          </h2>
-
-          <p className="mb-4 text-base font-medium md:text-md text-black">
-            Our packers and movers will help to relocation of your business to
-            the new place with complete peace of mind without too much
-            interruption in your business. Our team is proud to supply
-            full-service packing solutions additionally to our native and long
-            distance moving services. <br /> <br />
-            Lots of planning and preparation is required for successful and
-            hassle-free home relocation in Dubai. Since the ultimate goal is to
-            get all of your household articles packed and moved safely and in a
-            cost-effective manner, you can’t afford to go wrong in planning and
-            booking movers and packers for home relocation in Dubai. <br />
-            <br />
-            We pack the goods with the best quality material and take care that
-            they are not damaged during transit. We load the goods into the
-            transportation vehicle and thereafter unload the goods at the
-            destination. At the destination, we are able to verify the items
-            with the help of a checklist, and thereafter, we move the goods to
-            the destination place. It does not matter if the goods are to be
-            moved on the 1st floor or 10th floor. Our team takes utmost care and
-            compliance so that no damage occurs to your goods while they are
-            moved to your place.
-          </p>
-        </div>
-
         {/* Right Side (Form) */}
         {isSubmitted ? (
           <div className="flex items-center justify-center mx-auto">
