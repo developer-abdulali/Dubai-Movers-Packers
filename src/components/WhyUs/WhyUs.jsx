@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import the AOS CSS file
@@ -20,13 +21,13 @@ const WhyUs = () => {
 
   return (
     <div
-      className="flex flex-col md:flex-row my-3 mt-[-30px] max-w-screen-xl mx-auto px-3 gap-2"
+      className="flex flex-col md:flex-row max-w-screen-xl mx-auto mb-3 px-3 gap-2"
       data-aos="fade-up" // Add AOS animation here
       data-aos-duration="1000" // Animation duration in milliseconds
       data-aos-delay="200" // Delay before animation starts in milliseconds
     >
       {/* Left Side (Why Us) */}
-      <div className="w-full md:w-2/3">
+      <div className="w-full md:w-2/3 mt-0 md:mt-5 ">
         <h2 className="text-2xl md:text-4xl font-medium mb-4 text-[#0C71B8]">
           WHY DUBAI MOVERS
         </h2>
@@ -51,12 +52,12 @@ const WhyUs = () => {
 
       {/* Right Side (Form) */}
       <div
-        className="w-full md:w-[500px] bg-[#0872BB] p-4"
+        className="w-full md:w-[500px] bg-[#0872BB] p-2"
         data-aos="fade-up" // Add AOS animation here
         data-aos-duration="1000" // Animation duration in milliseconds
         data-aos-delay="200" // Delay before animation starts in milliseconds
       >
-        <p className="text-white text-3xl mt-2">REQUEST A QUOTE</p>
+        <p className="text-white text-xl sm:text-3xl mt-2">REQUEST A QUOTE</p>
         <p className="text-white text-xs font-semibold mt-2">
           To inquire about our services further, kindly submit the form below.
         </p>
@@ -137,3 +138,8 @@ const WhyUs = () => {
 };
 
 export default WhyUs;
+
+
+
+
+

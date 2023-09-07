@@ -35,7 +35,7 @@ const Contact = () => {
     >
       {isSubmitted ? (
         <div className="flex items-center justify-center">
-          <div className="min-h-screen flex flex-col justify-center items-center">
+          <div className="my-[200px] md:my-32 flex flex-col justify-center items-center">
             <div className="text-center text-white">
               <img
                 src="/images/greenTick.png"

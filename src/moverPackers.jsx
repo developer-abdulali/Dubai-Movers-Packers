@@ -34,7 +34,7 @@ const MoversPackers = () => {
     <div className="max-w-screen-xl mx-auto px-3">
       {isSubmitted ? (
         <div className="flex items-center justify-center mx-auto">
-          <div className="min-h-screen flex flex-col justify-center items-center">
+          <div className="my-[200px] md:my-32 flex flex-col justify-center items-center">
             <div className="text-center text-white">
               <img
                 src="/images/greenTick.png"
