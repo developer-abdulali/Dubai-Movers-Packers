@@ -12,10 +12,10 @@ const GetAQuote = () => {
 
     try {
       const result = await emailjs.sendForm(
-        "YOUR_SERVICE_ID_HERE", // Replace with your actual service ID
-        "YOUR_TEMPLATE_ID_HERE", // Replace with your actual template ID
+        "service_3tvcqgi", // Replace with your actual service ID
+        "template_st1fs5h", // Replace with your actual template ID
         form.current,
-        "YOUR_USER_ID_HERE" // Replace with your actual user ID
+        "gFg6G-PYYkiH3Thoe" // Replace with your actual user ID
       );
       console.log(result.text);
       setIsSubmitted(true);
