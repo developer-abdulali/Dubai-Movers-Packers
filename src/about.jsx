@@ -32,7 +32,7 @@ const About = () => {
         <p className="mt-4 text-black font-medium">
           Our transportation services serve with a professional crew who are
           sure to get you moving at ease and on time. Need to disassemble some
-          furniture? No problem. Got electronics that need careful packing? We
+          furniture? No problem. Got electronics that need careful packing ? We
           got it covered! Can’t load and unload items on the truck? We can carry
           them for you!
         </p>
