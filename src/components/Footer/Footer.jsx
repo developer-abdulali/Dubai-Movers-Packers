@@ -3,8 +3,7 @@ import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock } from "react-icons/fa";
 import AOS from "aos";
 import emailjs from "@emailjs/browser";
 
-import "aos/dist/aos.css"; // Import the AOS CSS file
-
+import "aos/dist/aos.css";
 const Footer = () => {
   const form = useRef();
 
@@ -110,33 +109,33 @@ const Footer = () => {
               <input
                 type="text"
                 placeholder="Your Name"
-                className="w-full p-2 rounded"
                 name="user_name"
                 autoComplete="name"
                 required
+                className="w-full p-2 focus:outline-none rounded"
               />
               {/* Input field for user's phone */}
               <input
                 type="number"
                 placeholder="Your Phone"
-                className="w-full p-2 rounded"
                 name="phoneNumber"
                 autoComplete="tel"
                 required
+                className="w-full p-2 focus:outline-none rounded"
               />
               {/* Input field for user's email */}
               <input
                 type="email"
                 placeholder="Your Email Address"
-                className="w-full p-2 rounded"
                 name="user_email"
                 autoComplete="email"
                 required
+                className="w-full focus:outline-none p-2 rounded"
               />
               {/* Submit button */}
               <button
                 type="submit"
-                className="w-full px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                className="w-full px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 duration-200 ease-linear"
               >
                 Submit
               </button>
