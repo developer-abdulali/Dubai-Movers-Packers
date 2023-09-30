@@ -49,7 +49,7 @@ const Footer = () => {
             <img src="/images/logo.png" alt="logo" className="mb-4" />
             {/* Company description */}
             <p className="text-white font-medium">
-              Furqan Movers & Packers have a full-service relocation company
+              Dubai Movers & Packers have a full-service relocation company
               that offers packing for residential and commercial purposes.
             </p>
           </div>
