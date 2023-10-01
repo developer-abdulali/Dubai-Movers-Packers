@@ -12,14 +12,14 @@ const Footer = () => {
 
     emailjs
       .sendForm(
-        "service_3tvcqgi",
-        "template_st1fs5h",
+        "service_18nwe79",
+        "template_las1xt9",
         form.current,
-        "gFg6G-PYYkiH3Thoe"
+        "QuYYU9p6lzTs2VFyy"
       )
       .then(
         (result) => {
-          <div>{alert("form submitted")}</div>;
+          <div>{alert("Your form has been successfully submitted")}</div>;
           form.current.reset(); // Reset the form fields
         },
         (error) => {
@@ -165,7 +165,7 @@ const Footer = () => {
                 href="mailto:dubaimoverspackers90@gmail.com"
                 className="hover:text-blue-500"
               >
-                dubaimoverspackers90@gmail.com
+                dubaimoverspacker90@gmail.com
               </a>
             </div>
             <div className="text-white mb-3 flex items-center">

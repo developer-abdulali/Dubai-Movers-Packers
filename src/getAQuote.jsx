@@ -12,10 +12,13 @@ const GetAQuote = () => {
 
     try {
       const result = await emailjs.sendForm(
-        "service_3tvcqgi", // Replace with your actual service ID
-        "template_st1fs5h", // Replace with your actual template ID
+        // "service_3tvcqgi", // Replace with your actual service ID
+        "service_18nwe79", // Replace with your actual service ID Dubai Movers Packers
+        // "template_st1fs5h", // Replace with your actual template ID
+        "template_las1xt9", // Replace with your actual template ID // Dubai Movers Packers
         form.current,
-        "gFg6G-PYYkiH3Thoe" // Replace with your actual user ID
+        // "gFg6G-PYYkiH3Thoe" // Replace with your actual user ID
+        "QuYYU9p6lzTs2VFyy" // Replace with your actual user ID  //Dubai Movers packers
       );
       console.log(result.text);
       setIsSubmitted(true);
