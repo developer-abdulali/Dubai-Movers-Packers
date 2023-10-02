@@ -65,7 +65,7 @@ const About = () => {
           <img src="/images/img1.jpeg" alt="Shifting" className="w-full" />
         </div>
         <div className="border">
-          <img src="/images/img3.jpeg" alt="Shifting" className="w-full" />
+          <img src="/images/BARODA.jpeg" alt="Shifting" className="w-full" />
         </div>
       </div>
     </div>

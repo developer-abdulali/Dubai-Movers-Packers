@@ -41,7 +41,7 @@ const Services = () => {
           data-aos-delay="200" // Delay before animation starts in milliseconds
         >
           <img
-            src="/images/domesticShifting.png"
+            src="/images/domesticshifting.jpeg"
             alt="Domestic Shifting"
             className="mx-auto mb-2 w-full h-[200px] max-w-full"
           />
@@ -57,7 +57,7 @@ const Services = () => {
           data-aos-delay="300" // Delay before animation starts in milliseconds
         >
           <img
-            src="/images/officeShifting.png"
+            src="/images/ofcShifting.jpeg"
             alt="Office Shifting"
             className="mx-auto mb-2 w-full h-[200px] max-w-full"
           />

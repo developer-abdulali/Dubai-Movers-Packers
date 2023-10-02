@@ -12,10 +12,14 @@ const OfficeShifting = () => {
 
     try {
       const result = await emailjs.sendForm(
-        "service_18nwe79",
-        "template_las1xt9",
+        "service_3tvcqgi",
+
+        // "service_18nwe79", //Dubai Movers Packers
+        "template_st1fs5h",
+        // "template_las1xt9", //Dubai Movers Packers
         form.current,
-        "QuYYU9p6lzTs2VFyy"
+        "gFg6G-PYYkiH3Thoe"
+        // "QuYYU9p6lzTs2VFyy" //Dubai Movers packers
       );
       console.log(result.text);
       setIsSubmitted(true);
@@ -75,7 +79,7 @@ const OfficeShifting = () => {
             <div className="w-full md:w-2/3 md:pr-4 mt-4">
               <div className="p-1 border">
                 <img
-                  src="/images/2combineimgs.png"
+                  src="/images/ofcRelocation.png"
                   alt="combine"
                   className="w-full h-auto"
                 />

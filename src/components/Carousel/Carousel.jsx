@@ -48,7 +48,7 @@ const Carousel = () => {
           data-aos-delay="200"
         >
           <img
-            src="/images/sliderimg2.jpg"
+            src="/images/sliderimg3.jpeg"
             className="d-block w-100 h-[300px] md:h-[600px]"
             alt="Slider Pic 3"
           />

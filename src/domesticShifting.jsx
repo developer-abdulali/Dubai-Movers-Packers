@@ -12,10 +12,13 @@ const DomesticShifting = () => {
 
     try {
       const result = await emailjs.sendForm(
-        "service_18nwe79",
-        "template_las1xt9",
+        // "service_18nwe79", //Dubai Movers
+        "service_3tvcqgi",
+        // "template_las1xt9",  // Dubai Movers
+        "template_st1fs5h",
         form.current,
-        "QuYYU9p6lzTs2VFyy"
+        // "QuYYU9p6lzTs2VFyy", //Dubai Movers
+        "gFg6G-PYYkiH3Thoe"
       );
       console.log(result.text);
       setIsSubmitted(true);

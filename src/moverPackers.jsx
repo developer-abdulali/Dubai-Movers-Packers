@@ -12,10 +12,14 @@ const MoversPackers = () => {
 
     try {
       const result = await emailjs.sendForm(
-        "service_18nwe79",
-        "template_las1xt9",
+        "service_3tvcqgi",
+
+        // "service_18nwe79", //Dubai Movers Packers
+        "template_st1fs5h",
+        // "template_las1xt9", //Dubai Movers Packers
         form.current,
-        "QuYYU9p6lzTs2VFyy"
+        "gFg6G-PYYkiH3Thoe"
+        // "QuYYU9p6lzTs2VFyy" //Dubai Movers packers
       );
       console.log(result.text);
       setIsSubmitted(true);

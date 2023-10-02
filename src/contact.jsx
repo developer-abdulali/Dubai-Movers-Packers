@@ -10,10 +10,13 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_18nwe79",
-        "template_las1xt9",
+        // "service_18nwe79", //Dubai Movers
+        "service_3tvcqgi",
+        "template_st1fs5h",
+        // "template_las1xt9",  // Dubai Movers
         form.current,
-        "QuYYU9p6lzTs2VFyy"
+        // "QuYYU9p6lzTs2VFyy" //Dubai Movers
+        "gFg6G-PYYkiH3Thoe"
       )
       .then(
         (result) => {
