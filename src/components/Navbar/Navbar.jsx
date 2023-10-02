@@ -10,18 +10,16 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-white z-10 sticky top-0 shadow-sm">
-      <nav className="max-w-screen-xl mx-auto px-3 h-[72px]">
+    <nav className="bg-white z-10 sticky top-0 shadow-sm">
+      <div className="max-w-screen-xl mx-auto px-3 h-[72px]">
         <div className="max-w-screen-xl mx-auto mt-4">
           <div className="flex items-center justify-between h-16">
             <div className="flex-shrink-0 py-3">
-              <a href="/">
-                <img
-                  src="/images/logo-removebg.png"
-                  alt="logo"
-                  className="w-[120px] sm:w-[200px] mt-2"
-                />
-              </a>
+              <img
+                src="/images/logo-removebg.png"
+                alt="logo"
+                className="w-[120px] sm:w-[200px] mt-2 cursor-pointer"
+              />
             </div>
             {/* ... Main navigation links for larger screens ... */}
             <div className="hidden md:flex ml-10 space-x-6 text-md font-medium">
@@ -117,7 +115,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-      </nav>
+      </div>
       {/* Mobile navigation sidebar */}
       <aside
         className={`fixed inset-y-0 left-0 transform ${
@@ -184,7 +182,7 @@ const Navbar = () => {
           </a>
         </div>
       </aside>
-    </div>
+    </nav>
   );
 };
 
