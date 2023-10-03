@@ -12,10 +12,14 @@ const Footer = () => {
 
     emailjs
       .sendForm(
-        "service_18nwe79",
-        "template_las1xt9",
+        "service_3tvcqgi",
+
+        // "service_18nwe79", //Dubai Movers Packers
+        "template_st1fs5h",
+        // "template_las1xt9", //Dubai Movers Packers
         form.current,
-        "QuYYU9p6lzTs2VFyy"
+        "gFg6G-PYYkiH3Thoe"
+        // "QuYYU9p6lzTs2VFyy" //Dubai Movers packers
       )
       .then(
         (result) => {
@@ -49,8 +53,8 @@ const Footer = () => {
             <img src="/images/logo.png" alt="logo" className="mb-4" />
             {/* Company description */}
             <p className="text-white font-medium">
-              Dubai Movers & Packers have a full-service relocation company
-              that offers packing for residential and commercial purposes.
+              Dubai Movers & Packers have a full-service relocation company that
+              offers packing for residential and commercial purposes.
             </p>
           </div>
           {/* List of services */}
@@ -116,7 +120,7 @@ const Footer = () => {
               />
               {/* Input field for user's phone */}
               <input
-                type="number"
+                type="text"
                 placeholder="Your Phone"
                 name="phoneNumber"
                 autoComplete="tel"
@@ -135,9 +139,9 @@ const Footer = () => {
               {/* Submit button */}
               <button
                 type="submit"
-                className="w-full px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 duration-200 ease-linear"
+                className="w-full px-4 py-2 text-white rounded bg-[#0772BD] hover:bg-[#14649d] duration-300 ease-linear"
               >
-                Submit
+                SUBMIT
               </button>
             </form>
           </div>
@@ -157,7 +161,7 @@ const Footer = () => {
             </div>
             <div className="text-white mb-3 flex items-center">
               <FaPhone className="mr-2" />
-              <span>+971 54 356 3717</span>
+              <span>+971 56 562 2978</span>
             </div>
             <div className="text-white mb-3 flex items-center">
               <FaEnvelope className="mr-2" />

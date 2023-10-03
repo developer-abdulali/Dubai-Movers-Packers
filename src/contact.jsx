@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import ThankYou from "./components/ThankYou/ThankYou";
 
 const Contact = () => {
   const form = useRef();
@@ -37,27 +38,30 @@ const Contact = () => {
       data-aos-delay="200"
     >
       {isSubmitted ? (
-        <div className="flex items-center justify-center">
-          <div className="my-[200px] md:my-32 flex flex-col justify-center items-center">
-            <div className="text-center text-white">
-              <img
-                src="/images/greenTick.png"
-                alt="Tick mark green"
-                className="w-36 h-36 sm:w-40 sm:h-40 md:w-44 md:h-44 lg:w-48 lg:h-48 xl:w-52 xl:h-52 mx-auto rounded-full border-4 border-green-600"
-              />
-              <h1 className="text-4xl font-extrabold">Thank You!</h1>
-              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-blue-900 mb-8">
-                Your form has been successfully submitted
-              </p>
-              <a
-                href="/"
-                className="text-blue-400 hover:underline hover:text-blue-600 text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl transition duration-300 ease-in-out"
-              >
-                &larr; Go Back
-              </a>
-            </div>
-          </div>
-        </div>
+        // <div className="flex items-center justify-center">
+        //   <div className="my-[200px] md:my-32 flex flex-col justify-center items-center">
+        //     <div className="text-center text-white">
+        //       <img
+        //         src="/images/greenTick.png"
+        //         alt="Tick mark green"
+        //         className="w-36 h-36 sm:w-40 sm:h-40 md:w-44 md:h-44 lg:w-48 lg:h-48 xl:w-52 xl:h-52 mx-auto rounded-full border-4 border-green-600"
+        //       />
+        //       <h1 className="text-4xl font-extrabold">Thank You!</h1>
+        //       <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-blue-900 mb-8">
+        //         Your form has been successfully submitted
+        //       </p>
+        //       <a
+        //         href="/"
+        //         className="text-blue-400 hover:underline hover:text-blue-600 text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl transition duration-300 ease-in-out"
+        //       >
+        //         &larr; Go Back
+        //       </a>
+        //     </div>
+        //   </div>
+        // </div>
+        <>
+          <ThankYou />
+        </>
       ) : (
         <form
           ref={form}
@@ -163,9 +167,9 @@ const Contact = () => {
           <div className="my-5">
             <button
               type="submit"
-              className="block w-full rounded-md bg-blue-500 px-4 py-3 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue-600 duration-200"
+              className="block w-full rounded-md px-4 py-3 text-center text-sm font-semibold text-white shadow-sm bg-[#0772BD] hover:bg-[#14649d] duration-300 ease-linear"
             >
-              Submit
+              SUBMIT
             </button>
           </div>
         </form>

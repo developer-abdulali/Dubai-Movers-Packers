@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import ThankYou from "./components/ThankYou/ThankYou";
 import emailjs from "@emailjs/browser";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -37,26 +38,29 @@ const MoversPackers = () => {
   return (
     <div className="max-w-screen-xl mx-auto px-3">
       {isSubmitted ? (
-        <div className="flex items-center justify-center mx-auto">
-          <div className="my-[200px] md:my-32 flex flex-col justify-center items-center">
-            <div className="text-center text-white">
-              <img
-                src="/images/greenTick.png"
-                alt="Tick mark green"
-                className="w-36 h-36 sm:w-40 sm:h-40 md:w-44 md:h-44 lg:w-48 lg:h-48 xl:w-52 xl:h-52 mx-auto rounded-full border-4 border-green-600"
-              />
-              <h1 className="text-4xl font-extrabold">Thank You!</h1>
-              <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-blue-900 mb-8">
-                Your form has been successfully submitted
-              </p>
-              <a
-                href="/moversPackers"
-                className="text-blue-400 hover:underline hover:text-blue-600 text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl transition duration-300 ease-in-out"
-              >
-                &larr; Go Back
-              </a>
-            </div>
-          </div>
+        // <div className="flex items-center justify-center mx-auto">
+        //   <div className="my-[200px] md:my-32 flex flex-col justify-center items-center">
+        //     <div className="text-center text-white">
+        //       <img
+        //         src="/images/greenTick.png"
+        //         alt="Tick mark green"
+        //         className="w-36 h-36 sm:w-40 sm:h-40 md:w-44 md:h-44 lg:w-48 lg:h-48 xl:w-52 xl:h-52 mx-auto rounded-full border-4 border-green-600"
+        //       />
+        //       <h1 className="text-4xl font-extrabold">Thank You!</h1>
+        //       <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-blue-900 mb-8">
+        //         Your form has been successfully submitted
+        //       </p>
+        //       <a
+        //         href="/moversPackers"
+        //         className="text-blue-400 hover:underline hover:text-blue-600 text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl transition duration-300 ease-in-out"
+        //       >
+        //         &larr; Go Back
+        //       </a>
+        //     </div>
+        //   </div>
+        // </div>
+        <div className="mx-auto">
+          <ThankYou />
         </div>
       ) : (
         <>
@@ -87,7 +91,7 @@ const MoversPackers = () => {
                 Our Packers and Movers services in Dubai are a well-recognized
                 packaging and moving service in the industry. We provide quick
                 and reliable packing and best packers and movers services at
-                very suitable moving prices in Karachi and other cities of
+                very suitable moving prices in Dubai and other cities of
                 Pakistan.
                 <br />
                 <br />
@@ -100,17 +104,16 @@ const MoversPackers = () => {
                 Loading and Unloading service, Packing & unpacking Services, and
                 warehouse & storage services, etc. Due to our quick and reliable
                 household goods moving services, we have garnered a huge client
-                base across Karachi city and long-distance cities of Pakistan.
-                If you have any queries about packers and movers, please call us
-                at +971 54 356 3717 or email us at
-                dubaimoverspackers90@gmail.com
+                base across Dubai. If you have any queries about packers and
+                movers, please call us at +971 56 562 2978 or email us at
+                dubaimoverspacker90@gmail.com
               </p>
             </div>
 
             {/* Right Side (Form) */}
 
             <div
-              className="w-full md:w-1/3 bg-[#E1E1E1] p-2 mt-4 md:mt-0 h-[650px]"
+              className="w-full md:w-1/3 bg-[#E1E1E1] p-2 mt-4 md:mt-0 h-full"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="200"
@@ -157,9 +160,7 @@ const MoversPackers = () => {
                       className="w-full px-2 py-2 h-10 border-2 placeholder:text-gray-700 border-black focus:outline-none bg-[#E1E1E1]"
                       required
                     >
-                      <option value="" disabled>
-                        Select a service
-                      </option>
+                      <option value="">Select a service</option>
                       <option value="House Shifting">House Shifting</option>
                       <option value="Domestic Shifting">
                         Domestic Shifting
@@ -182,7 +183,7 @@ const MoversPackers = () => {
                   </div>
                   <button
                     type="submit"
-                    className="bg-[#585ccd] text-white px-4 py-3 text-sm w-full"
+                    className="bg-[#0772BD] hover:bg-[#14649d] duration-300 ease-linear text-white px-4 py-3 text-sm w-full"
                   >
                     SUBMIT
                   </button>

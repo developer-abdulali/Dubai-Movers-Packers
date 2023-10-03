@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import emailjs from "emailjs-com";
+import ThankYou from "./components/ThankYou/ThankYou";
 
 const DomesticShifting = () => {
   const form = useRef();
@@ -36,26 +37,29 @@ const DomesticShifting = () => {
   return (
     <>
       {isSubmitted ? (
-        <div className="flex items-center justify-center mx-auto">
-          <div className="my-[200px] md:my-32 flex flex-col justify-center items-center">
-            <div className="text-center text-white">
-              <img
-                src="/images/greenTick.png"
-                alt="Tick mark green"
-                className="w-36 h-36 sm:w-40 sm:h-40 md:w-44 md:h-44 lg:w-48 lg:h-48 xl:w-52 xl:h-52 mx-auto rounded-full border-4 border-green-600"
-              />
-              <h1 className="text-4xl font-extrabold">Thank You!</h1>
-              <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-blue-900 mb-8">
-                Your form has been successfully submitted
-              </p>
-              <a
-                href="/domesticShifting"
-                className="text-blue-400 hover:underline hover:text-blue-600 text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl transition duration-300 ease-in-out"
-              >
-                &larr; Go Back
-              </a>
-            </div>
-          </div>
+        // <div className="flex items-center justify-center mx-auto">
+        //   <div className="my-[200px] md:my-32 flex flex-col justify-center items-center">
+        //     <div className="text-center text-white">
+        //       <img
+        //         src="/images/greenTick.png"
+        //         alt="Tick mark green"
+        //         className="w-36 h-36 sm:w-40 sm:h-40 md:w-44 md:h-44 lg:w-48 lg:h-48 xl:w-52 xl:h-52 mx-auto rounded-full border-4 border-green-600"
+        //       />
+        //       <h1 className="text-4xl font-extrabold">Thank You!</h1>
+        //       <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-blue-900 mb-8">
+        //         Your form has been successfully submitted
+        //       </p>
+        //       <a
+        //         href="/domesticShifting"
+        //         className="text-blue-400 hover:underline hover:text-blue-600 text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl transition duration-300 ease-in-out"
+        //       >
+        //         &larr; Go Back
+        //       </a>
+        //     </div>
+        //   </div>
+        // </div>
+        <div className="mx-auto">
+          <ThankYou />
         </div>
       ) : (
         <div
@@ -146,7 +150,7 @@ const DomesticShifting = () => {
 
             {/* Right Side (Form) */}
             <div
-              className="w-full md:w-1/3 bg-[#E1E1E1] p-2 mt-4 md:mt-0 h-[650px]"
+              className="w-full md:w-1/3 bg-[#E1E1E1] p-2 mt-4 md:mt-0 h-full"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="200"
@@ -193,9 +197,7 @@ const DomesticShifting = () => {
                       className="w-full px-2 py-2 h-10 border-2 placeholder:text-gray-500 border-black focus:outline-none bg-[#E1E1E1] text-black"
                       required
                     >
-                      <option value="" disabled>
-                        Select a service
-                      </option>
+                      <option value="">Select a service</option>
                       <option value="House Shifting">House Shifting</option>
                       <option value="Domestic Shifting">
                         Domestic Shifting
@@ -218,7 +220,7 @@ const DomesticShifting = () => {
                   </div>
                   <button
                     type="submit"
-                    className="bg-[#585ccd] text-white px-4 py-3 text-sm w-full"
+                    className="bg-[#0772BD] hover:bg-[#14649d] duration-300 ease-linear text-white px-4 py-3 text-sm w-full"
                   >
                     SUBMIT
                   </button>
