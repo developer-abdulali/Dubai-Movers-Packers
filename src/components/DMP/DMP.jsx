@@ -46,7 +46,7 @@ const DMP = () => {
         {/* Image */}
         <div>
           <img
-            src="/images/dubai-mover-img.png"
+            src="/images/dubaiMoverPacker.png"
             alt="Dubai Movers and packers"
             className="w-[1500px]"
           />
@@ -60,7 +60,7 @@ const DMP = () => {
       >
         {/* Border with images */}
         <div className="border p-1">
-          <img src="/images/2combineimages.png" alt="Images" />
+          <img src="/images/combineImgs.png" alt="Images" />
         </div>
         {/* Reliable Services Image */}
         <div>
