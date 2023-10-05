@@ -37,7 +37,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <div className="bg-black p-4">
+    <div className="bg-black p-4 z-50">
       {/* Footer section */}
       <footer
         className="max-w-screen-xl mx-auto"
