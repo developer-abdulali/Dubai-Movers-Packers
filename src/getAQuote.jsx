@@ -99,6 +99,7 @@ const GetAQuote = () => {
       ) : (
         <div
           className="w-full md:w-[600px] bg-[#0872BB] p-2"
+        // aos animation class
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-delay="200"
