@@ -15,6 +15,7 @@ const App = () => {
     <Router>
       <div>
         {/* Render the Navbar */}
+   
         <Navbar />
 
         {/* Define routes */}

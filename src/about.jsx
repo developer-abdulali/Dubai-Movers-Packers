@@ -37,11 +37,6 @@ const About = () => {
           them for you!
         </p>
         <p className="mt-4 text-black font-medium">
-          We provide 16-ft trucks for all local relocations. Our moving team
-          will make sure that your belongings are properly packed and loaded
-          onto it.
-        </p>
-        <p className="mt-4 text-black font-medium">
           Our mover and packer staff are fully experienced and equipped just
           like international standards. We always compensate our Crew Member
           based on their moving and packing performance. Our pre-relocation

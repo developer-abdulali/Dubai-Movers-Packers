@@ -138,9 +138,7 @@ const WhyUs = () => {
                     className="w-full px-2 py-2 h-10 border-2 rounded-lg focus:outline-none focus:border-white bg-[#0C71B8] text-white"
                     required
                   >
-                    <option value="" disabled>
-                      Select a service
-                    </option>
+                    <option value="">Select a service</option>
                     <option value="House Shifting">House Shifting</option>
                     <option value="Domestic Shifting">Domestic Shifting</option>
                     <option value="Office Shifting">Office Shifting</option>

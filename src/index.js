@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-import ArabicText from "./components/ArabicText/ArabicText";
 import Footer from "./components/Footer/Footer";
 import WhatsappContact from "./components/WhatsappContact/WhatsappContact";
 import Loader from "./components/Loader/Loader";
@@ -16,9 +15,9 @@ const Root = () => {
       try {
         // Set loading to true when data fetching starts
         setLoading(true);
-
+        //
         // Simulate data fetching delay (replace with actual data fetching logic)
-        await new Promise((resolve) => setTimeout(resolve, 2000));
+        await new Promise((resolve) => setTimeout(resolve, 0));
 
         // Set loading to false when data fetching is complete
         setLoading(false);
@@ -38,7 +37,6 @@ const Root = () => {
       ) : (
         // Render your actual content once data is loaded
         <>
-          <ArabicText />
           <App />
           <Footer />
           <WhatsappContact />
