@@ -60,7 +60,7 @@ const DMP = () => {
       >
         {/* Border with images */}
         <div className="border p-1">
-          <img src="/images/combineImgs.png" alt="Images" />
+          <img src="/images/2combineimages.png" alt="Images" />
         </div>
         {/* Reliable Services Image */}
         <div>
