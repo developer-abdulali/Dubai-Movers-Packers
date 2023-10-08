@@ -7,7 +7,7 @@ import Testimonial from "./components/Testimonial/Testimonial";
 import WhyUs from "./components/WhyUs/WhyUs";
 
 // Defining the main App component
-function Home() {
+const Home = () => {
   return (
     <>
       {/* Rendering the Carousel component */}
