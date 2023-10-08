@@ -157,7 +157,7 @@ const Navbar = () => {
           </div>
           <div className="px-4 py-10 space-y-5 sm:space-y-8 text-lg sm:text-2xl font-medium">
             <Link
-              href="/"
+              to="/"
               className={`block duration-200 hover:text-blue-500 ${
                 location.pathname === "/" ? "text-blue-500" : ""
               }`}
@@ -165,7 +165,7 @@ const Navbar = () => {
               Home
             </Link>
             <Link
-              href="/about"
+              to="/about"
               className={`block duration-200 hover:text-blue-500 ${
                 location.pathname === "/about" ? "text-blue-500" : ""
               }`}
@@ -173,7 +173,7 @@ const Navbar = () => {
               About
             </Link>
             <Link
-              href="/services"
+              to="/services"
               className={`block duration-200 hover:text-blue-500 ${
                 location.pathname === "/services" ? "text-blue-500" : ""
               }`}
@@ -181,7 +181,7 @@ const Navbar = () => {
               Services
             </Link>
             <Link
-              href="/houseShifting"
+              to="/houseShifting"
               className={`block duration-200 hover:text-blue-500 ${
                 location.pathname === "/houseShifting" ? "text-blue-500" : ""
               }`}
@@ -189,7 +189,7 @@ const Navbar = () => {
               House Shifting 24/7
             </Link>
             <Link
-              href="/getAQuote"
+              to="/getAQuote"
               className={`block duration-200 hover:text-blue-500 ${
                 location.pathname === "/getAQuote" ? "text-blue-500" : ""
               }`}
@@ -197,7 +197,7 @@ const Navbar = () => {
               Get A Quote
             </Link>
             <Link
-              href="/contact"
+              to="/contact"
               className={`block duration-200 hover:text-blue-500 ${
                 location.pathname === "/contact" ? "text-blue-500" : ""
               }`}
