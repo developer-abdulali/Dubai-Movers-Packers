@@ -37,7 +37,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <div className="bg-black p-4 z-50">
+    <div className="bg-black p-4">
       {/* Footer section */}
       <footer
         className="max-w-screen-xl mx-auto"
@@ -161,7 +161,9 @@ const Footer = () => {
             </div>
             <div className="text-white mb-3 flex items-center">
               <FaPhone className="mr-2" />
-              <span>+971 54 356 3717</span>
+              <a href="tel:+971543563717" className="hover:text-blue-500">
+                +971 54 356 3717
+              </a>
             </div>
             <div className="text-white mb-3 flex items-center">
               <FaEnvelope className="mr-2" />

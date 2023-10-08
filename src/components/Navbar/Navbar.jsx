@@ -30,13 +30,13 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="fixed top-0 right-0 left-0 z-10 ">
+    <div className="sticky top-0 z-10 ">
       {isScrolled ? null : <ArabicText />}
       <nav className="bg-white shadow-sm">
-        <div className="max-w-screen-xl mx-auto px-3 h-full ">
+        <div className="max-w-screen-xl mx-auto px-3">
           <div className="max-w-screen-xl mx-auto">
-            <div className="flex items-center justify-between h-full">
-              <div className="flex-shrink-0 py-3">
+            <div className="flex items-center justify-between">
+              <div className="flex-shrink-0">
                 <img
                   src="/images/logo-removebg.png"
                   alt="logo"
