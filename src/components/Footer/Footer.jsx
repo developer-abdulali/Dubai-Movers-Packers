@@ -15,10 +15,10 @@ const Footer = () => {
         "service_3tvcqgi",
 
         "service_18nwe79", //Dubai Movers Packers
-        // "template_st1fs5h",
+        
         "template_las1xt9", //Dubai Movers Packers
         form.current,
-        // "gFg6G-PYYkiH3Thoe"
+        
         "QuYYU9p6lzTs2VFyy" //Dubai Movers packers
       )
       .then(
@@ -153,7 +153,7 @@ const Footer = () => {
             data-aos-delay="200"
           >
             {/* Section title */}
-            <p className="font-semibold text-white mb-4 mt-4">GET IN TOUCH</p>
+            <p className="font-semibold text-white mb-4 mt-[-10px]">GET IN TOUCH</p>
             {/* Contact details */}
             <div className="text-white mb-3 flex items-center">
               <FaMapMarkerAlt className="mr-2" />
