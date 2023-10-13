@@ -9,6 +9,10 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleLinkClick = () => {
+    setIsOpen(false);
+  };
+
   return (
     <nav className="bg-white shadow-sm sticky top-0 z-10 ">
       <div className="max-w-screen-xl mx-auto px-3">
@@ -123,7 +127,7 @@ const Navbar = () => {
         } w-60 sm:w-7/12 bg-black opacity-90 text-white transition duration-300 ease-in-out md:hidden`}
       >
         <div className="flex-shrink-0 py-4 px-4">
-          <Link to="/">
+          <Link to="/" onClick={handleLinkClick}>
             <img
               src="/images/logo-removebg.png"
               alt="logo"
@@ -134,6 +138,7 @@ const Navbar = () => {
         <div className="px-4 py-10 space-y-5 sm:space-y-8 text-lg sm:text-2xl font-medium">
           <Link
             to="/"
+            onClick={handleLinkClick}
             className={`block duration-200 hover:text-blue-500 ${
               location.pathname === "/" ? "text-blue-500" : ""
             }`}
@@ -142,6 +147,7 @@ const Navbar = () => {
           </Link>
           <Link
             to="/about"
+            onClick={handleLinkClick}
             className={`block duration-200 hover:text-blue-500 ${
               location.pathname === "/about" ? "text-blue-500" : ""
             }`}
@@ -150,6 +156,7 @@ const Navbar = () => {
           </Link>
           <Link
             to="/services"
+            onClick={handleLinkClick}
             className={`block duration-200 hover:text-blue-500 ${
               location.pathname === "/services" ? "text-blue-500" : ""
             }`}
@@ -158,6 +165,7 @@ const Navbar = () => {
           </Link>
           <Link
             to="/houseShifting"
+            onClick={handleLinkClick}
             className={`block duration-200 hover:text-blue-500 ${
               location.pathname === "/houseShifting" ? "text-blue-500" : ""
             }`}
@@ -166,6 +174,7 @@ const Navbar = () => {
           </Link>
           <Link
             to="/getAQuote"
+            onClick={handleLinkClick}
             className={`block duration-200 hover:text-blue-500 ${
               location.pathname === "/getAQuote" ? "text-blue-500" : ""
             }`}
@@ -174,6 +183,7 @@ const Navbar = () => {
           </Link>
           <Link
             to="/contact"
+            onClick={handleLinkClick}
             className={`block duration-200 hover:text-blue-500 ${
               location.pathname === "/contact" ? "text-blue-500" : ""
             }`}
