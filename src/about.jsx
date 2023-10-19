@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 
 const About = () => {
   useEffect(() => {
+    document.title = "About Us - Dubai Movers Packers";
     AOS.init();
   }, []);
   return (

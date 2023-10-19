@@ -1,10 +1,14 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import ThankYou from "./components/ThankYou/ThankYou";
 
 const Contact = () => {
   const form = useRef();
   const [isSubmitted, setIsSubmitted] = useState(false);
+
+  useEffect(() => {
+    document.title = "Contact Us  - Dubai Movers Packers";
+  });
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -14,7 +18,7 @@ const Contact = () => {
         "service_18nwe79", //Dubai Movers
         // "service_3tvcqgi",
         // "template_st1fs5h",
-        "template_las1xt9",  // Dubai Movers
+        "template_las1xt9", // Dubai Movers
         form.current,
         "QuYYU9p6lzTs2VFyy" //Dubai Movers
         // "gFg6G-PYYkiH3Thoe"
